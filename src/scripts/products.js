@@ -5,12 +5,12 @@ const products=[
         "id": 0,
         "price": "13.49",
         "description": [
-            "Roast beef",
-            "Bell peppers",
-            "Mushrooms",
-            "Onions",
-            "Tomatoes",
-            "Marinara"
+            " Roast beef",
+            " Bell peppers ",
+            " Mushrooms",
+            " Onions",
+            " Tomatoes",
+            " Marinara"
         ]
     },
     {
@@ -19,13 +19,13 @@ const products=[
         "id":1,
         "price": "11.99",
         "description": [
-            "Jamon",
-            "Bell peppers",
-            "Pepperocini",
-            "Olives",
-            "Mozzarella",
-            "Gouda",
-            "Marinara"
+            " Jamon",
+            "  Bell peppers",
+            " Pepperocini",
+            " Olives",
+            " Mozzarella",
+            " Gouda",
+            " Marinara"
         ]
     },
     {
@@ -34,12 +34,12 @@ const products=[
         "id": 2,
         "price": "13.99",
         "description": [
-            "Ham",
-            "Pizza sauce",
-            "Chared pineapple",
-            "Cheddar",
-            "Jalapeno"
-        ]
+            " Ham",
+            " Pizza sauce",
+            " Chared pineapple",
+            " Cheddar",
+            " Jalapeno"
+         ]
     },
     {
         "name": "Marinara",
@@ -47,24 +47,23 @@ const products=[
         "id": 3,
         "price": "12.99",
         "description": [
-            "Ham",
-            "Pizza sauce",
-            "Chared pineapple",
-            "Cheddar",
-            "Jalapeno"
-        ]
-    },
+            " Ham",
+            " Pizza sauce",
+            " Chared pineapple",
+            " Cheddar",
+            " Jalapeno"
+         ]
+    } ,
     {
         "name": "Anchovy",
         "image": "./img/pizza/4.jpg",
         "id": 4,
         "price": "14.99",
         "description": [
-            "Ham",
-            "Pizza sauce",
-            "Chared pineapple",
-            "Cheddar",
-            "Jalapeno"
+            " Ham",
+            " Chared pineapple",
+            " Cheddar",
+            " Jalapeno"
         ]
     },
     {
@@ -73,11 +72,11 @@ const products=[
         "id": 5,
         "price": "15.50",
         "description": [
-            "Tomatoes",
-            "Pizza sauce",
-            "Basil",
-            "Cheddar",
-            "Jalapeno"
+            " Tomatoes",
+            " Pizza sauce",
+            " Basil",
+            " Cheddar",
+            " Jalapeno"
         ]
     },
     {
@@ -86,11 +85,11 @@ const products=[
         "id": 6,
         "price": "14.99",
         "description": [
-            "Tomatoes",
-            "Pizza sauce",
-            "Calamari",
-            "Cheddar",
-            "Jalapeno"
+            " omatoes",
+            " Pizza sauce",
+            " Calamari",
+            " Cheddar",
+            " Jalapeno"
         ]
     },
     {
@@ -99,12 +98,12 @@ const products=[
         "id": 7,
         "price": "10.99",
         "description": [
-            "Tomatoes",
-            "Pizza sauce",
-            "Chared pineapple",
-            "Cheddar",
-            "Jalapeno",
-            "Eggplant",
+            " Tomatoes",
+            " Pizza sauce",
+            " Chared pineapple",
+            " Cheddar",
+            " Jalapeno",
+            " Eggplant",
            
         ]
     },
@@ -114,11 +113,11 @@ const products=[
         "id": 8,
         "price": "14.99",
         "description": [
-            "Tomato",
-            "Kabana",
-            "Garlic oil",
-            "Onions",
-            "Mozzarella",
+            " Tomato",
+            " Kabana",
+            " Garlic oil",
+            " Onions",
+            " Mozzarella",
             
         ]
     },

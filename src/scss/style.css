@@ -1,0 +1,125 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "lato", serif;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+main section .one {
+  width: 30%;
+  height: 100%;
+}
+
+main section .main_section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section .main_section .menu_name {
+  width: 100%;
+  height: 50px;
+}
+
+main section .main_section .menu_options {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section .main_section .menu_options .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 300px;
+  min-height: 300px;
+  width: 30%;
+  background-color: #9e9eb3;
+  margin: 1rem;
+  padding: .5rem;
+}
+
+main section .main_section .menu_options .item .pizza_img {
+  border-radius: 20px;
+}
+
+main section .main_section .menu_options .item .icon {
+  font-size: 30px;
+  color: white;
+}
+
+main section .main_section .menu_options .item .price {
+  font-style: italic;
+}
+
+main section .main_section .menu_options .item .name {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+main section .main_section .menu_options .item .description {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
