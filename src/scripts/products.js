@@ -125,5 +125,5 @@ const products=[
     
 ]
 
-let data = JSON.stringify(products);
-export { data };
+let data1 = JSON.stringify(products);
+export { data1 };
