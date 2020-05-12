@@ -1,0 +1,151 @@
+.main_section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  .menu_name {
+    width: 100%;
+    height: 50px;
+  }
+  .menu_options {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // display: none;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 300px;
+      min-height: 300px;
+      width: 30%;
+      background-color: rgb(158, 158, 179);
+      margin: 1rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+
+      .pizza_img {
+        border-radius: 20px;
+      }
+
+      .icon {
+        cursor: pointer;
+        font-size: 30px;
+        color: rgb(241, 94, 94);
+      }
+
+      .price {
+        font-style: italic;
+      }
+      .name {
+        font-size: 25px;
+        font-weight: 900;
+      }
+
+      .description {
+        text-align: center;
+      }
+    }
+  }
+  .payment {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 3rem;
+    display: none;
+    .content {
+      z-index: 10;
+      background-color: rgb(226, 223, 218);
+      width: 50%;
+      height: 100vh;
+      padding: 1rem;
+    }
+    button {
+      width: fit-content;
+    }
+  }
+  .pizza_det {
+  width: 100%;
+  height: 700px;
+  background-color: #9e9eb3;
+  display: flex;
+
+  .one {
+    background-color: rgb(224, 185, 185);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    i {
+      background-color: rgb(216, 231, 216);
+      cursor: pointer;
+      width: fit-content;
+      height: fit-content;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+    img {
+      width: 95%;
+      margin-top: 10vh;
+      border-radius: 10%;
+    }
+  }
+  .two {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    .pizza_name {
+      font-size: 2.5rem;
+    }
+    .pizza_description {
+      color: rgb(116, 116, 116);
+      font-style: italic;
+      font-size: 1.5rem;
+    }
+    .pizza_size,
+    .options {
+      margin: 3rem;
+      span {
+        margin: 0.2rem;
+        cursor: pointer;
+        background-color: rgb(206, 206, 206);
+        width: 100px;
+        padding: 1rem;
+        border-radius: 2rem;
+      }
+    }
+    .total {
+      font-size: 2rem;
+      span {
+        margin: 0.5rem;
+      }
+      .suma::before {
+        content: "$";
+      }
+    }
+    .pay,
+    .go_pay {
+      width: 10rem;
+      margin: 0.5rem;
+      padding: 0.3rem;
+      border-radius: 2rem;
+      border: none;
+      outline: none;
+      background-color: rgb(206, 206, 206);
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+}
