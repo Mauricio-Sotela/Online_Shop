@@ -83,7 +83,7 @@ function content() {
 
       back_icon.addEventListener("click", () => {
         if(quantity.innerHTML > 1){
-          alert('Confirm yor order before go back')
+          alert('Confirm your order before go back')
         }else{
            pizza_options.style.display = "flex";
         pizza_detail.innerHTML = "";
@@ -108,7 +108,7 @@ function content() {
         if (pay.style.cssText=='background-color: rgb(158, 179, 163);') {
         payment.style.display='flex';
         }else{
-          alert('Confirm yor order before pay')
+          alert('Confirm your order before pay')
         }
 
         
