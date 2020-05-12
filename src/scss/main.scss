@@ -1,0 +1,19 @@
+@import "_topnav.scss";
+@import "_leftItems.scss";
+@import "_body.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  //background-color: #FFE18E;
+  //font-family: 'Roboto', sans-serif;
+  font-family: "Roboto Slab", serif;
+  color: #20201e;
+}
+
