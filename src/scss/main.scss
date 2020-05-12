@@ -1,6 +1,7 @@
 @import "_topnav.scss";
 @import "_leftItems.scss";
 @import "_body.scss";
+
 *,
 *:before,
 *:after {
@@ -16,6 +17,8 @@ body {
   //font-family: 'Roboto', sans-serif;
   font-family: "Roboto Slab", serif;
   color: #20201e;
+  display: flex;
+  flex-direction: column;
 }
 
 // html {
