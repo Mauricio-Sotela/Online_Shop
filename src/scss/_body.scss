@@ -14,7 +14,7 @@
       flex-direction: column;
 // Top category name
       .menu_name {
-        width: 80vw;
+        width: 97%;
         height: 10vh;
         font-size: 2vw;
         display: flex;
@@ -95,6 +95,79 @@
         }
         button{
           width: fit-content;
+        }
+      }
+      .pizza_det {
+        width: 100%;
+        height: 40rem;
+        background-color: #9e9eb3;
+        display: flex;
+      
+        .one {
+          background-color: rgb(224, 185, 185);
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          i {
+            background-color: rgb(216, 231, 216);
+            cursor: pointer;
+            width: fit-content;
+            height: fit-content;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 1rem;
+          }
+          img {
+            width: 95%;
+            margin-top: 10vh;
+            border-radius: 10%;
+          }
+        }
+        .two {
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
+          .pizza_name {
+            font-size: 2.5rem;
+          }
+          .pizza_description {
+            color: rgb(116, 116, 116);
+            font-style: italic;
+            font-size: 1.5rem;
+          }
+          .pizza_size,
+          .options {
+            margin: 3rem;
+            span {
+              margin: 0.2rem;
+              cursor: pointer;
+              background-color: rgb(206, 206, 206);
+              width: 6.5rem;
+              padding: 1rem;
+              border-radius: 2rem;
+            }
+          }
+          .total {
+            font-size: 2rem;
+            span {
+              margin: 0.5rem;
+            }
+            .suma::before {
+              content: "$";
+            }
+          }
+          .pay,
+          .go_pay {
+            width: 10rem;
+            margin: 0.5rem;
+            padding: 0.3rem;
+            border-radius: 2rem;
+            border: none;
+            outline: none;
+            background-color: rgb(206, 206, 206);
+            font-size: 1.2rem;
+            cursor: pointer;
+          }
         }
       }
     }
