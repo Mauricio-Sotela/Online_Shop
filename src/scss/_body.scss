@@ -12,7 +12,7 @@
       height: 90vh;
       display: flex;
       flex-direction: column;
-
+// Top category name
       .menu_name {
         width: 80vw;
         height: 10vh;
@@ -21,7 +21,7 @@
         align-items: flex-end;
         margin-left: 2vw;
       }
-
+//The product gallery
       .menu_options {
         width: 80vw;
         height: 80vh;
@@ -30,7 +30,7 @@
         flex-wrap: wrap;
         // display: none;
         overflow-y: scroll;
-
+// Each item
         .item {
           display: flex;
           flex-direction: column;
@@ -39,6 +39,7 @@
           min-width: 10vw;
           min-height: 10vh;
           width: 20%;
+          height: 35vh;
           background-color: rgb(158, 158, 179);
           margin: 1rem;
           padding: 0.5rem;
@@ -46,8 +47,8 @@
 
           .pizza_img {
             border-radius: 20px;
-            // width: 14vw;
-            // height: 16vh;
+             width: 14vw;
+             height: 18vh;
           }
 
           .icon {
