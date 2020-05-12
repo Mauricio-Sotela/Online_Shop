@@ -1,64 +1,45 @@
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "lato", serif;
-  font-weight: 500;
-}
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-}
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-
-  section {
+// Main section with the product gallery
+.big-section {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 90vh;
 
-    .one {
-      width: 30%;
-      height: 100%;
-    }
 
     .main_section {
-      width: 100%;
+      width: 80vw;
+      height: 90vh;
       display: flex;
       flex-direction: column;
-
+// Top category name
       .menu_name {
-        width: 100%;
-        height: 50px;
+        width: 80vw;
+        height: 10vh;
+        font-size: 2vw;
+        display: flex;
+        align-items: flex-end;
+        margin-left: 2vw;
       }
+//The product gallery
       .menu_options {
-        
-        width: 100%;
-        height: 100%;
+        width: 80vw;
+        height: 80vh;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         // display: none;
-
+        overflow-y: scroll;
+// Each item
         .item {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          min-width: 300px;
-          min-height: 300px;
-          width: 30%;
+          min-width: 10vw;
+          min-height: 10vh;
+          width: 20%;
+          height: 35vh;
           background-color: rgb(158, 158, 179);
           margin: 1rem;
           padding: 0.5rem;
@@ -66,11 +47,13 @@ main {
 
           .pizza_img {
             border-radius: 20px;
+             width: 14vw;
+             height: 18vh;
           }
 
           .icon {
             cursor: pointer;
-            font-size: 30px;
+            font-size: 1.5vw;
             color: rgb(241, 94, 94);
           }
 
@@ -78,7 +61,7 @@ main {
             font-style: italic;
           }
           .name {
-            font-size: 25px;
+            font-size: 1.5vw;
             font-weight: 900;
           }
 
@@ -87,6 +70,9 @@ main {
           }
         }
       }
+
+
+      // Payment page
       .payment{
 
         position: absolute;
@@ -113,103 +99,5 @@ main {
       }
     }
   }
-}
 
-// // simona............
 
-// nav {
-//   width: 100vw;
-//   height: 10vh;
-//   display: flex;
-//   justify-content: space-evenly;
-//   align-items: center;
-//   margin-top: 3rem;
-
-//   .logo {
-//     width: 25vw;
-//     height: 10vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: flex-end;
-//     font-family: "Caveat", cursive;
-
-//     p {
-//       width: 20vw;
-//       height: 6vh;
-//       font-size: 3.5vw;
-//       color: #f86e6e;
-//     }
-//   }
-
-//   .filters-box {
-//     width: 45vw;
-//     height: 10vh;
-//     display: flex;
-//     flex-direction: column;
-
-//     .title {
-//       width: 11vw;
-//       height: 5vh;
-//       font-size: 1vw;
-//       display: flex;
-//       justify-content: center;
-//       align-items: flex-end;
-//       color: #a6a6a5;
-//     }
-
-//     .filters {
-//       width: 34vw;
-//       height: 5vh;
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: space-evenly;
-//       align-items: flex-end;
-//       margin: 1rem;
-
-//       & > * {
-//         font-size: 1.2vw;
-//         background-color: rgba(223, 94, 94, 0.295);
-//         margin: 1rem;
-//         cursor: pointer;
-//         padding: .2rem;
-        
-
-//         &:last-of-type {
-//           color: #a6a6a5;
-//         }
-//       }
-//     }
-//   }
-
-//   .cart {
-//     width: 15vw;
-//     height: 10vh;
-//     display: flex;
-//     justify-content: space-evenly;
-//     align-items: flex-end;
-
-//     .fa-concierge-bell {
-//       font-size: 1.8vw;
-//       display: flex;
-//       justify-content: center;
-//       align-items: flex-end;
-//       color: #f86e6e;
-//     }
-
-//     .order-status {
-//       font-size: 1.2vw;
-//       font-weight: bold;
-//     }
-
-//     .items-no {
-//       width: 2rem;
-//       height: 2rem;
-//       font-size: 1.4vw;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       border-radius:50%;
-//       border: 1px solid #f86e6e;
-//     }
-//   }
-// }

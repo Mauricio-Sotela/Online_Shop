@@ -1,27 +1,33 @@
+//Left Side Nav
+
 .leftItems {
-  background-color: rgb(216, 164, 69);
   width: 20%;
-  height: 80vh;
-  outline: none;
+  height: 50vh;
   display: flex;
-  position: relative;
-  outline: none;
   align-items: center;
-  flex-direction: column;
-  font-size: 2rem;
-  outline: none;
-  margin-top: 7rem;
-  padding: 0;
-}
-ul.demo {
-  list-style-type: none;
-  outline: none;
-}
-.categories {
-  // background-color: salmon;
-  font-size: 2rem;
-  margin-top: 6rem;
-}
-.pizza {
-  // background-color: royalblue;
+  justify-content: center;
+  
+
+  .menu-box {
+    width: 15vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5vh;
+    //position: fixed;
+
+    .menu {
+      list-style-type: none;
+      text-transform: uppercase;
+      font-size: 1.2vw;
+    }
+
+    .categories {
+      font-size: 1vw;
+      margin-top: 6rem;
+      color: #a6a6a5;
+    }
+  }
 }
