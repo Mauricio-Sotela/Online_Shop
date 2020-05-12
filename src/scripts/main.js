@@ -67,7 +67,7 @@ function content() {
           <span class="plus"><i class="fas fa-plus-circle"></i></span>
         </span>
       </p>
-      <button class="pay">Place Order</button>
+      <button class="pay">Confirm Order</button>
       <button class="go_pay">PAY</button>
     </div>
   </div>`;
@@ -100,12 +100,21 @@ function content() {
         }
       });
       go_pay.addEventListener('click',()=>{
-        last_pay();
-        payment.style.display='flex'
+        if (pay.style.cssText=='background-color: rgb(158, 179, 163);') {
+        payment.style.display='flex';
+        }else{
+          alert('Confirm yor order before pay')
+        }
+
+        
       });
       pay.addEventListener('click',last_pay)
+
       function last_pay(){
         orders.innerHTML=parseInt(orders.innerHTML)+1;
+        total.innerHTML = parseFloat(pric);
+        quantity.innerHTML = 1;
+        pay.style.cssText='background-color: rgb(158, 179, 163);'
 
       }
     });
