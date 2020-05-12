@@ -1,6 +1,7 @@
 import { data1 } from "./products.js";
 let data = JSON.parse(data1);
 
+
 let pizza_options = document.querySelector(".menu_options");
 let orders = document.querySelector(".items-no");
 let payment = document.querySelector('.payment')
@@ -11,9 +12,11 @@ let pizza_price;
 let pizza_description;
 let pizza_item;
 
+
 window.addEventListener("load", content);
 
 function content() {
+
   for (let i = 0; i < data.length; i++) {
     pizza_options.innerHTML += `<div class="item ">
      <img class="pizza_img" src="${data[i]["image"]}" alt="${data[i]["name"]}" width="90%">
@@ -37,11 +40,11 @@ function content() {
       pizza_detail.innerHTML = "";
 
       pizza_detail.innerHTML = ` <div class="pizza_det">
-    <div>
-      <i class="fas fa-arrow-left"></i>
+    <div class="one">
+      <i class="fas fa-arrow-left">Back to menu</i>
       <img src="${data[i]["image"]}" alt="${data[i]["name"]}" width="30%" />
     </div>
-    <div>
+    <div class="two">
       <div class="pizza_name">${data[i]["name"]}</div>
       <div class="pizza_description">${data[i]["info"]}</div>
       <p class="pizza_size">Size:
@@ -51,6 +54,10 @@ function content() {
       </p>
       <p class="options"> Options:
         <span class="choose">Onions</span>
+        <span class="choose">Garlic</span>
+        <span class="choose">Jalapenos</span>
+        <span class="choose">Salami</span>
+        <span class="choose">Mozzarella</span>
       </p>
       <p class="total">
         <span class="suma">${data[i]["price"]}</span>
