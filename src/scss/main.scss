@@ -1,3 +1,6 @@
+@import "_topnav.scss";
+@import "_leftItems.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -12,94 +15,3 @@ body {
   color: #20201e;
 }
 
-// <<<---- Nav ---->>>
-
-nav {
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  .logo {
-    width: 25vw;
-    height: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-family: "Caveat", cursive;
-
-    p {
-      width: 20vw;
-      height: 3vw;
-      font-size: 3.5vw;
-      color: #f86e6e;
-    }
-  }
-
-  .filters-box {
-    width: 45vw;
-    height: 5vw;
-    display: flex;
-    flex-direction: column;
-
-    .title {
-      width: 11vw;
-      height: 2.5vw;
-      font-size: 1vw;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      color: #a6a6a5;
-    }
-
-    .filters {
-      width: 34vw;
-      height: 2.5vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: flex-end;
-
-      & > * {
-        font-size: 1.2vw;
-
-        &:last-of-type {
-          color: #a6a6a5;
-        }
-      }
-    }
-  }
-
-  .cart {
-    width: 15vw;
-    height: 5vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-
-    .fa-concierge-bell {
-      font-size: 1.8vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-    }
-
-    .order-status {
-      font-size: 1.2vw;
-      font-weight: bold;
-    }
-
-    .items-no {
-        width: 2.1vw;
-        height: 2vw;
-      font-size: 1.6vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid;
-      border-radius: 100%;
-    }
-  }
-}
