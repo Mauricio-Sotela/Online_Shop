@@ -1,11 +1,12 @@
 @import "_topnav.scss";
 @import "_leftItems.scss";
 @import "_body.scss";
-
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -16,4 +17,12 @@ body {
   font-family: "Roboto Slab", serif;
   color: #20201e;
 }
+
+// html {
+//   box-sizing: border-box;
+//   scroll-behavior: smooth;
+//   font-family: "lato", serif;
+//   font-weight: 500;
+// }
+
 
