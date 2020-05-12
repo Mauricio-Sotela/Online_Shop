@@ -5,28 +5,27 @@
   align-items: center;
   justify-content: center;
   
-  
-}
-.menu-box{
-width: 15vw;
-height: 30vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-line-height: 5vh;
-}
 
-ul.menu {
-  list-style-type: none;
-  text-transform: uppercase;
-  font-size: 1.2vw;
-  
-}
+  .menu-box {
+    width: 15vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5vh;
+    //position: fixed;
 
-.categories {
-  font-size: 1vw;
-  margin-top: 6rem;
-  color: #a6a6a5;
-}
+    .menu {
+      list-style-type: none;
+      text-transform: uppercase;
+      font-size: 1.2vw;
+    }
 
+    .categories {
+      font-size: 1vw;
+      margin-top: 6rem;
+      color: #a6a6a5;
+    }
+  }
+}
