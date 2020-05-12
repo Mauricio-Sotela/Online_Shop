@@ -11,7 +11,9 @@ const products=[
             " Onions",
             " Tomatoes",
             " Marinara"
-        ]
+        ],
+        "info": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur sint cupiditate eum modi molestias sed earum quidem inventore."
+
     },
     {
         "name": "Luigi",
@@ -26,7 +28,8 @@ const products=[
             " Mozzarella",
             " Gouda",
             " Marinara"
-        ]
+        ],
+        "info": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur sint cupiditate eum modi molestias sed earum quidem inventore."
     },
     {
         "name": "Four Meat",
@@ -39,7 +42,8 @@ const products=[
             " Chared pineapple",
             " Cheddar",
             " Jalapeno"
-         ]
+         ],
+         "info": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur sint cupiditate eum modi molestias sed earum quidem inventore."
     },
     {
         "name": "Marinara",
@@ -52,7 +56,8 @@ const products=[
             " Chared pineapple",
             " Cheddar",
             " Jalapeno"
-         ]
+         ],
+         "info": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur sint cupiditate eum modi molestias sed earum quidem inventore."
     } ,
     {
         "name": "Anchovy",
@@ -64,7 +69,8 @@ const products=[
             " Chared pineapple",
             " Cheddar",
             " Jalapeno"
-        ]
+        ],
+        "info": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur sint cupiditate eum modi molestias sed earum quidem inventore."
     },
     {
         "name": "Margarita",
@@ -77,7 +83,8 @@ const products=[
             " Basil",
             " Cheddar",
             " Jalapeno"
-        ]
+        ],
+        "info": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur sint cupiditate eum modi molestias sed earum quidem inventore."
     },
     {
         "name": "Seafood",
@@ -90,7 +97,8 @@ const products=[
             " Calamari",
             " Cheddar",
             " Jalapeno"
-        ]
+        ],
+        "info": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur sint cupiditate eum modi molestias sed earum quidem inventore."
     },
     {
         "name": "Veggie",
@@ -105,7 +113,8 @@ const products=[
             " Jalapeno",
             " Eggplant",
            
-        ]
+        ],
+        "info": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur sint cupiditate eum modi molestias sed earum quidem inventore."
     },
     {
         "name": "Cabanossi",
@@ -119,7 +128,8 @@ const products=[
             " Onions",
             " Mozzarella",
             
-        ]
+        ],
+        "info": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dignissimos consequuntur sint cupiditate eum modi molestias sed earum quidem inventore."
     },
     
 ]

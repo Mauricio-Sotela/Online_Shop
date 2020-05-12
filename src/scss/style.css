@@ -98,7 +98,8 @@ main section .main_section .menu_options .item {
   width: 30%;
   background-color: #9e9eb3;
   margin: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
 main section .main_section .menu_options .item .pizza_img {
@@ -106,8 +107,9 @@ main section .main_section .menu_options .item .pizza_img {
 }
 
 main section .main_section .menu_options .item .icon {
+  cursor: pointer;
   font-size: 30px;
-  color: white;
+  color: #f15e5e;
 }
 
 main section .main_section .menu_options .item .price {
@@ -121,5 +123,186 @@ main section .main_section .menu_options .item .name {
 
 main section .main_section .menu_options .item .description {
   text-align: center;
+}
+
+main section .main_section .payment {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.603);
+  padding: 3rem;
+  display: none;
+}
+
+main section .main_section .payment .content {
+  z-index: 10;
+  background-color: #e2dfda;
+  width: 50%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+main section .main_section .payment button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+nav .logo {
+  width: 25vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Caveat", cursive;
+}
+
+nav .logo p {
+  width: 20vw;
+  height: 6vh;
+  font-size: 3.5vw;
+  color: #f86e6e;
+}
+
+nav .filters-box {
+  width: 45vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .filters-box .title {
+  width: 11vw;
+  height: 5vh;
+  font-size: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #a6a6a5;
+}
+
+nav .filters-box .filters {
+  width: 34vw;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 1rem;
+}
+
+nav .filters-box .filters > * {
+  font-size: 1.2vw;
+  background-color: rgba(223, 94, 94, 0.295);
+  margin: 1rem;
+  cursor: pointer;
+  padding: .2rem;
+}
+
+nav .filters-box .filters > *:last-of-type {
+  color: #a6a6a5;
+}
+
+nav .cart {
+  width: 15vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav .cart .fa-concierge-bell {
+  font-size: 1.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #f86e6e;
+}
+
+nav .cart .order-status {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+nav .cart .items-no {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px solid #f86e6e;
 }
 /*# sourceMappingURL=style.css.map */
