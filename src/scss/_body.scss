@@ -58,6 +58,7 @@
           }
 
           .price {
+            font-size: 1.2vw;
             font-style: italic;
           }
           .name {
@@ -66,7 +67,10 @@
           }
 
           .description {
+            font-size: 0.8vw;
             text-align: center;
+            width: 14vw;
+            height: 18vh;
           }
         }
       }
