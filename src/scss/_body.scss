@@ -24,47 +24,71 @@
       width: 80vw;
       height: 80vh;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      // display: none;
-      overflow-y: scroll;
-      // Each item
-      .item {
+      flex-direction: column;
+      // Top category name
+      .menu_name {
+        width: 97%;
+        height: 10vh;
+        font-size: 2vw;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        align-items: flex-end;
+        margin-left: 2vw;
+      }
+      //The product gallery
+      .menu_options {
+        width: 80vw;
+        height: 80vh;
+        padding-top: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
         align-items: center;
-        min-width: 10vw;
-        min-height: 10vh;
-        width: 20%;
-        height: 35vh;
-        background-color: rgb(158, 158, 179);
-        margin: 1rem;
-        padding: 0.5rem;
-        border-radius: 1rem;
+        flex-wrap: wrap;
+        // display: none;
+        overflow-y: scroll;
+        // Each item
+        .item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-width: 10vw;
+          min-height: 10vh;
+          width: 25%;
+          height: 50vh;
+          //background-color: rgb(158, 158, 179);
+          margin: 1rem;
+          padding: 0.5rem;
+          border-radius: 1rem;
 
-        .pizza_img {
-          border-radius: 20px;
-          width: 14vw;
-          height: 18vh;
-        }
+          .pizza_img {
+            // border-radius: 20px;
+            //  width: 14vw;
+            //  height: 18vh;
+            width: 70%;
+          }
 
-        .icon {
-          cursor: pointer;
-          font-size: 1.5vw;
-          color: rgb(241, 94, 94);
-        }
+          .icon {
+            cursor: pointer;
+            font-size: 1.5vw;
+            color: rgb(241, 94, 94);
+          }
 
-        .price {
-          font-style: italic;
-        }
-        .name {
-          font-size: 1.5vw;
-          font-weight: 900;
-        }
+          .price {
+            font-size: 1.2vw;
+            font-style: italic;
+          }
+          .name {
+            font-size: 1.5vw;
+            font-weight: 900;
+          }
 
-        .description {
-          text-align: center;
+          .description {
+            font-size: 0.8vw;
+            text-align: center;
+            width: 14vw;
+            height: 18vh;
+          }
         }
       }
     }
