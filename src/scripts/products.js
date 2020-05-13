@@ -13,7 +13,8 @@ const products = [
       " Marinara",
     ],
     info:
-      " This delicious pizza is made for you from the tastiest ingredients Roast beef,Bell peppers,Mushrooms,Onions,Tomatoes,Marinara.",
+
+      " This delicious pizza is made for you from the tastiest ingredients: Roast beef, Bell peppers, Mushrooms, Onions, Tomatoes, Marinara.",
   },
   {
     name: "Luigi",
@@ -30,7 +31,7 @@ const products = [
       " Marinara",
     ],
     info:
-      "This delicious pizza is made for you from the tastiest ingredients  Jamon,Bell peppers,Pepperocini,Olives,Mozzarella,Gouda,Marinara.",
+      "This delicious pizza is made for you from the tastiest ingredients: Jamon, Bell peppers, Pepperoncini, Olives, Mozzarella, Gouda, Marinara.",
   },
   {
     name: "Four Meat",
@@ -45,7 +46,7 @@ const products = [
       " Jalapeno",
     ],
     info:
-      " This delicious pizza is made for you from the tastiest ingredients  Ham,Pizza sauce,Chared pineapple,Cheddar,Jalapeno.",
+      " This delicious pizza is made for you from the tastiest ingredients: Ham, Pizza sauce, Chared pineapple, Cheddar, Jalapeno.",
   },
   {
     name: "Marinara",
@@ -60,7 +61,7 @@ const products = [
       " Jalapeno",
     ],
     info:
-      " This delicious pizza is made for you from the tastiest ingredients  Ham,Pizza sauce,Chared pineapple,Cheddar,Jalapeno.",
+      " This delicious pizza is made for you from the tastiest ingredients: Ham, Pizza sauce, Chared pineapple, Cheddar, Jalapeno.",
   },
   {
     name: "Anchovy",
@@ -69,7 +70,7 @@ const products = [
     price: "14.99",
     description: [" Ham", " Chared pineapple", " Cheddar", " Jalapeno"],
     info:
-      "This delicious pizza is made with the tastiest ingredients,Pizza Sauce, Salami, Cheddar, Jalapeno.",
+      "This delicious pizza is made with the tastiest ingredients: Pizza Sauce, Salami, Cheddar, Jalapeno.",
   },
   {
     name: "Margarita",
@@ -84,7 +85,7 @@ const products = [
       " Jalapeno",
     ],
     info:
-      " This delicious pizza is made with the tastiest ingredients, Pizza Sauce, Cheese, Jalapeno.",
+      " This delicious pizza is made with the tastiest ingredients: Pizza Sauce, Cheese, Jalapeno.",
   },
   {
     name: "Seafood",
@@ -99,8 +100,7 @@ const products = [
       " Jalapeno",
     ],
     info:
-      " This delicious pizza is made with the tastiest ingredients Omatoes, Pizza Sauce, Salami,Cheddar,Jalapeno.",
-  },
+      " This delicious pizza is made with the tastiest ingredients: Tomatoes, Pizza Sauce, Salami, Cheddar, Jalapeno.",
   {
     name: "Veggie",
     image: "./img/Pizza-round/1.png",
@@ -115,7 +115,7 @@ const products = [
       " Eggplant",
     ],
     info:
-      " This delicious pizza is made with the tastiest ingredients,Tomatoes, Pizza sauce, Chared pineapple, jalapeno,Eggplant.",
+      " This delicious pizza is made with the tastiest ingredients: Tomatoes, Pizza sauce, Chared pineapple, jalapeno, Eggplant.",
   },
   {
     name: "Cabanossi",
@@ -130,7 +130,7 @@ const products = [
       " Mozzarella",
     ],
     info:
-      " This delicious pizza is made with the tastiest ingredients,Tomatoes,Kabana, Garlic oil, Onions,Mozzarella.",
+      " This delicious pizza is made with the tastiest ingredients: Tomatoes, Kabana, Garlic oil, Onions, Mozzarella.",
   },
 ];
 
