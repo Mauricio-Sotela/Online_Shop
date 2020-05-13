@@ -38,7 +38,7 @@ function content() {
 
       pizza_detail.innerHTML = ` <div class="pizza_det">
     <div class="one">
-      <i class="fas fa-arrow-left">Back to menu</i>
+      <i class="fas fa-arrow-left"> Back to menu</i>
       <img src="${data[i]["image"]}" alt="${data[i]["name"]}" width="30%" />
     </div>
     <div class="two">
@@ -64,7 +64,7 @@ function content() {
           <span class="plus"><i class="fas fa-plus-circle"></i></span>
         </span>
       </p>
-      <button class="pay">Confirm Order</button>
+      <button class="pay">Add to Cart</button>
       <button class="go_pay">PAY</button>
     </div>
   </div>`;
