@@ -181,7 +181,7 @@
         //background-color: rgb(251, 247, 247);
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 40%;
         
         i {
           //background-color: rgb(216, 231, 216);
@@ -195,10 +195,10 @@
           border-radius: 1rem;
         }
         img {
-          width: 95%;
+          width: 75%;
           margin-top: 10vh;
           animation: rotate360 2s, ease-in-out;
-
+          align-self: flex-start;
         }
       }
       @keyframes rotate360 {
@@ -212,48 +212,48 @@
       }
 
       .two {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        justify-content: space-evenly;
         .pizza_name {
           font-size: 2.5rem;
         }
         .pizza_description {
           color: rgb(116, 116, 116);
+         // width: fit-content;
           font-size: 1.4rem;
         }
         
         .pizza_size,
         .options {
-          margin: 3rem 0;
+         width: fit-content;
           span {
-            margin: 0.2rem;
+            width: 6.5rem;
+            padding: 0.7rem;
+            margin: 0.2vh 0.2vh;
+            font-size: 1.3vw;
             cursor: pointer;
             background-color: rgb(98, 91, 91);
             color: white;
-            width: 6.5rem;
-            padding: 1rem;
             border-radius: 2rem;
           }
         }
         .total {
+          width: 15vw;
+          display: flex;
+          justify-content: space-around;
           font-size: 2rem;
-          span {
-            margin: 0.5rem;
-          }
+        
           .suma::before {
             content: "$";
           }
         }
         .pay {
           width: 15rem;
-          margin-top: 3rem;
-          margin-left: 0.5rem;
-          padding: 0.3rem;
           border-radius: 2rem;
           border: none;
           outline: none;
-          //background-color: rgb(206, 206, 206);
           font-size: 1.2rem;
           cursor: pointer;
           
@@ -261,8 +261,7 @@
         .go_pay{
           width: 15rem;
           height: 4vh;
-          margin: 0.5rem;
-          padding: 0.3rem;
+          margin-top: -2vh;
           background-color: #f86e6e;
           font-weight: bold;
           border-radius: 2rem;
