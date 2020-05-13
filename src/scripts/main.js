@@ -140,7 +140,7 @@ function content() {
 
       function bill(){
         let orderDetail=document.querySelector('.order_detail');
-        orderDetail.innerHTML+=`<div><img class="pay_img" src="${data[i]["image"]}" alt="" width="30%" />
+        orderDetail.innerHTML+=`<div><img class="pay_img" src="${data[i]["image"]}" alt="" width="5%" />
         <span class="pay_name">${data[i]["name"]}</span>
         <span class="pay_qt">${l}</span></div>`;
         subtotal.innerHTML=totalF;
