@@ -13,6 +13,7 @@ const products = [
       " Marinara",
     ],
     info:
+
       " This delicious pizza is made for you from the tastiest ingredients: Roast beef, Bell peppers, Mushrooms, Onions, Tomatoes, Marinara.",
   },
   {
@@ -100,7 +101,6 @@ const products = [
     ],
     info:
       " This delicious pizza is made with the tastiest ingredients: Tomatoes, Pizza Sauce, Salami, Cheddar, Jalapeno.",
-  },
   {
     name: "Veggie",
     image: "./img/Pizza-round/1.png",
