@@ -101,7 +101,8 @@ const products = [
     ],
     info:
       " This delicious pizza is made with the tastiest ingredients: Tomatoes, Pizza Sauce, Salami, Cheddar, Jalapeno.",
-  {
+  },
+      {
     name: "Veggie",
     image: "./img/Pizza-round/1.png",
     id: 7,
