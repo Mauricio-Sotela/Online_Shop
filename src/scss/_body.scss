@@ -107,27 +107,52 @@
       height: 40rem;
       background-color: white;
       display: flex;
+      animation: Slide-in 1s, ease-in-out backwards;
 
+      @keyframes Slide-in {
+        0%{ 
+         // width: 70%;
+          opacity: 0;
+          transform: translateX(50%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
       .one {
-        background-color: rgb(251, 247, 247);
+        //background-color: rgb(251, 247, 247);
         display: flex;
         flex-direction: column;
         width: 50%;
+        
         i {
-          background-color: rgb(216, 231, 216);
+          //background-color: rgb(216, 231, 216);
+          font-size: 1vw;
+          text-transform: uppercase;
           cursor: pointer;
           width: fit-content;
           height: fit-content;
-          margin: 1rem;
-          padding: 1rem;
+          // margin: 1rem;
+          // padding: 1rem;
           border-radius: 1rem;
         }
         img {
           width: 95%;
           margin-top: 10vh;
-          border-radius: 10%;
+          animation: rotate360 2s, ease-in-out;
+
         }
       }
+      @keyframes rotate360 {
+        0%{ 
+         // width: 70%;
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
       .two {
         display: flex;
         flex-direction: column;
@@ -137,12 +162,12 @@
         }
         .pizza_description {
           color: rgb(116, 116, 116);
-          font-style: italic;
-          font-size: 1.5rem;
+          font-size: 1.4rem;
         }
+        
         .pizza_size,
         .options {
-          margin: 3rem;
+          margin: 3rem 0;
           span {
             margin: 0.2rem;
             cursor: pointer;
@@ -162,16 +187,29 @@
             content: "$";
           }
         }
-        .pay,
-        .go_pay {
-          width: 10rem;
-          margin: 0.5rem;
+        .pay {
+          width: 15rem;
+          margin-top: 3rem;
+          margin-left: 0.5rem;
           padding: 0.3rem;
           border-radius: 2rem;
           border: none;
           outline: none;
-          background-color: rgb(206, 206, 206);
+          //background-color: rgb(206, 206, 206);
           font-size: 1.2rem;
+          cursor: pointer;
+          
+        }
+        .go_pay{
+          width: 15rem;
+          height: 4vh;
+          margin: 0.5rem;
+          padding: 0.3rem;
+          background-color: #f86e6e;
+          font-weight: bold;
+          border-radius: 2rem;
+          border: none;
+          outline: none;
           cursor: pointer;
         }
       }
