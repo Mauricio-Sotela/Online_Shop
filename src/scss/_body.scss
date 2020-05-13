@@ -1,18 +1,31 @@
-
 // Main section with the product gallery
 .big-section {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 90vh;
+
+  .main_section {
+    width: 80vw;
     height: 90vh;
-
-
-    .main_section {
+    display: flex;
+    flex-direction: column;
+    // Top category name
+    .menu_name {
+      width: 97%;
+      height: 10vh;
+      font-size: 2vw;
+      display: flex;
+      align-items: flex-end;
+      margin-left: 2vw;
+    }
+    //The product gallery
+    .menu_options {
       width: 80vw;
-      height: 90vh;
+      height: 80vh;
       display: flex;
       flex-direction: column;
-// Top category name
+      // Top category name
       .menu_name {
         width: 97%;
         height: 10vh;
@@ -21,7 +34,7 @@
         align-items: flex-end;
         margin-left: 2vw;
       }
-//The product gallery
+      //The product gallery
       .menu_options {
         width: 80vw;
         height: 80vh;
@@ -33,7 +46,7 @@
         flex-wrap: wrap;
         // display: none;
         overflow-y: scroll;
-// Each item
+        // Each item
         .item {
           display: flex;
           flex-direction: column;
@@ -53,7 +66,6 @@
             //  width: 14vw;
             //  height: 18vh;
             width: 70%;
-            
           }
 
           .icon {
@@ -79,107 +91,105 @@
           }
         }
       }
+    }
 
+    // Payment page
+    .payment {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.603);
+      padding: 3rem;
+      display: none;
+      .content {
+        z-index: 10;
+        background-color: rgb(226, 221, 211);
+        width: 50%;
+        height: 100vh;
+        padding: 1rem;
+      }
+      button {
+        width: fit-content;
+      }
+    }
+    .pizza_det {
+      width: 100%;
+      height: 40rem;
+      background-color: white;
+      display: flex;
 
-      // Payment page
-      .payment{
-
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
+      .one {
+        background-color: rgb(251, 247, 247);
         display: flex;
-        align-items: flex-end;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.603);
-        padding: 3rem;
-        display: none;
-        .content{
-          z-index: 10;
-          background-color: rgb(226, 223, 218);
-          width: 50%;
-          height: 100vh;
-          padding: 1rem;
-        }
-        button{
+        width: 50%;
+        i {
+          background-color: rgb(216, 231, 216);
+          cursor: pointer;
           width: fit-content;
+          height: fit-content;
+          margin: 1rem;
+          padding: 1rem;
+          border-radius: 1rem;
+        }
+        img {
+          width: 95%;
+          margin-top: 10vh;
+          border-radius: 10%;
         }
       }
-      .pizza_det {
-        width: 100%;
-        height: 40rem;
-        background-color: #9e9eb3;
+      .two {
         display: flex;
-      
-        .one {
-          background-color: rgb(224, 185, 185);
-          display: flex;
-          flex-direction: column;
-          width: 50%;
-          i {
-            background-color: rgb(216, 231, 216);
+        flex-direction: column;
+        padding: 2rem;
+        .pizza_name {
+          font-size: 2.5rem;
+        }
+        .pizza_description {
+          color: rgb(116, 116, 116);
+          font-style: italic;
+          font-size: 1.5rem;
+        }
+        .pizza_size,
+        .options {
+          margin: 3rem;
+          span {
+            margin: 0.2rem;
             cursor: pointer;
-            width: fit-content;
-            height: fit-content;
-            margin: 1rem;
+            background-color: rgb(98, 91, 91);
+            color: white;
+            width: 6.5rem;
             padding: 1rem;
-            border-radius: 1rem;
-          }
-          img {
-            width: 95%;
-            margin-top: 10vh;
-            border-radius: 10%;
+            border-radius: 2rem;
           }
         }
-        .two {
-          display: flex;
-          flex-direction: column;
-          padding: 2rem;
-          .pizza_name {
-            font-size: 2.5rem;
-          }
-          .pizza_description {
-            color: rgb(116, 116, 116);
-            font-style: italic;
-            font-size: 1.5rem;
-          }
-          .pizza_size,
-          .options {
-            margin: 3rem;
-            span {
-              margin: 0.2rem;
-              cursor: pointer;
-              background-color: rgb(206, 206, 206);
-              width: 6.5rem;
-              padding: 1rem;
-              border-radius: 2rem;
-            }
-          }
-          .total {
-            font-size: 2rem;
-            span {
-              margin: 0.5rem;
-            }
-            .suma::before {
-              content: "$";
-            }
-          }
-          .pay,
-          .go_pay {
-            width: 10rem;
+        .total {
+          font-size: 2rem;
+          span {
             margin: 0.5rem;
-            padding: 0.3rem;
-            border-radius: 2rem;
-            border: none;
-            outline: none;
-            background-color: rgb(206, 206, 206);
-            font-size: 1.2rem;
-            cursor: pointer;
           }
+          .suma::before {
+            content: "$";
+          }
+        }
+        .pay,
+        .go_pay {
+          width: 10rem;
+          margin: 0.5rem;
+          padding: 0.3rem;
+          border-radius: 2rem;
+          border: none;
+          outline: none;
+          background-color: rgb(206, 206, 206);
+          font-size: 1.2rem;
+          cursor: pointer;
         }
       }
     }
   }
-
-
+}

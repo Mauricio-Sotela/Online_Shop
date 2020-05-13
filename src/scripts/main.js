@@ -1,10 +1,9 @@
 import { data1 } from "./products.js";
 let data = JSON.parse(data1);
 
-
 let pizza_options = document.querySelector(".menu_options");
 let orders = document.querySelector(".items-no");
-let payment = document.querySelector('.payment')
+let payment = document.querySelector(".payment");
 let img;
 let icon;
 let pizza_name;
@@ -12,11 +11,9 @@ let pizza_price;
 let pizza_description;
 let pizza_item;
 
-
 window.addEventListener("load", content);
 
 function content() {
-
   for (let i = 0; i < data.length; i++) {
     pizza_options.innerHTML += `<div class="item ">
      <img class="pizza_img" src="${data[i]["image"]}" alt="${data[i]["name"]}" width="90%">
@@ -82,13 +79,12 @@ function content() {
       let pric = total.innerHTML;
 
       back_icon.addEventListener("click", () => {
-        if(quantity.innerHTML > 1){
-          alert('Confirm your order before go back')
-        }else{
-           pizza_options.style.display = "flex";
-        pizza_detail.innerHTML = "";
+        if (quantity.innerHTML > 1) {
+          alert("Confirm your order before go back");
+        } else {
+          pizza_options.style.display = "flex";
+          pizza_detail.innerHTML = "";
         }
-       
       });
       minus.addEventListener("click", () => {
         if (quantity.innerHTML > 1) {
@@ -104,23 +100,20 @@ function content() {
           total.innerHTML = parseFloat(pric) * qt;
         }
       });
-      go_pay.addEventListener('click',()=>{
-        if (pay.style.cssText=='background-color: rgb(158, 179, 163);') {
-        payment.style.display='flex';
-        }else{
-          alert('Confirm your order before pay')
+      go_pay.addEventListener("click", () => {
+        if (pay.style.cssText == "background-color: rgb(158, 179, 163);") {
+          payment.style.display = "flex";
+        } else {
+          alert("Confirm your order before pay");
         }
-
-        
       });
-      pay.addEventListener('click',last_pay)
+      pay.addEventListener("click", last_pay);
 
-      function last_pay(){
-        orders.innerHTML=parseInt(orders.innerHTML)+1;
+      function last_pay() {
+        orders.innerHTML = parseInt(orders.innerHTML) + 1;
         total.innerHTML = parseFloat(pric);
         quantity.innerHTML = 1;
-        pay.style.cssText='background-color: rgb(158, 179, 163);'
-
+        pay.style.cssText = "background-color: rgb(158, 179, 163);";
       }
     });
   });
