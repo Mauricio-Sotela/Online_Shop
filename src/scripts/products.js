@@ -1,7 +1,7 @@
 const products=[
     {
         "name": "Roberto",
-        "image": "./img/pizza/0.jpg",
+        "image": "./img/Pizza-round/0.png",
         "id": 0,
         "price": "13.49",
         "description": [
@@ -17,7 +17,7 @@ const products=[
     },
     {
         "name": "Luigi",
-        "image": "./img/pizza/1.jpg",
+        "image": "./img/Pizza-round/1.png",
         "id":1,
         "price": "11.99",
         "description": [
@@ -33,7 +33,7 @@ const products=[
     },
     {
         "name": "Four Meat",
-        "image": "./img/pizza/2.jpg",
+        "image": "./img/Pizza-round/3.png",
         "id": 2,
         "price": "13.99",
         "description": [
@@ -47,7 +47,7 @@ const products=[
     },
     {
         "name": "Marinara",
-        "image": "./img/pizza/3.jpg",
+        "image": "./img/Pizza-round/2.png",
         "id": 3,
         "price": "12.99",
         "description": [
@@ -61,7 +61,7 @@ const products=[
     } ,
     {
         "name": "Anchovy",
-        "image": "./img/pizza/4.jpg",
+        "image": "./img/Pizza-round/4.png",
         "id": 4,
         "price": "14.99",
         "description": [
@@ -74,7 +74,7 @@ const products=[
     },
     {
         "name": "Margarita",
-        "image": "./img/pizza/5.jpg",
+        "image": "./img/Pizza-round/5.png",
         "id": 5,
         "price": "15.50",
         "description": [
@@ -88,7 +88,7 @@ const products=[
     },
     {
         "name": "Seafood",
-        "image": "./img/pizza/6.jpg",
+        "image": "./img/Pizza-round/0.png",
         "id": 6,
         "price": "14.99",
         "description": [
@@ -102,7 +102,7 @@ const products=[
     },
     {
         "name": "Veggie",
-        "image": "./img/pizza/7.jpg",
+        "image": "./img/Pizza-round/1.png",
         "id": 7,
         "price": "10.99",
         "description": [
@@ -118,7 +118,7 @@ const products=[
     },
     {
         "name": "Cabanossi",
-        "image": "./img/pizza/8.jpg",
+        "image": "./img/Pizza-round/3.png",
         "id": 8,
         "price": "14.99",
         "description": [
