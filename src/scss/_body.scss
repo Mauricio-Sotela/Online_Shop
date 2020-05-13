@@ -93,6 +93,7 @@
           width: 50%;
           height: 100vh;
           padding: 1rem;
+          
           .p_div{
             display: flex;
             justify-content: space-between;
@@ -119,8 +120,9 @@
               }
               .order_detail{
                 width: 100%;
+                max-height: 35rem;
                 padding: 1rem;
-                
+                overflow: scroll;
                 div{
                   display: flex;
                   flex-direction: row;
