@@ -1,19 +1,28 @@
 import { data1 } from "./products.js";
 let data = JSON.parse(data1);
 
+
 let pizza_options = document.querySelector(".menu_options");
 let orders = document.querySelector(".items-no");
-let payment = document.querySelector(".payment");
+let payment = document.querySelector('.payment')
 let img;
 let icon;
 let pizza_name;
 let pizza_price;
 let pizza_description;
 let pizza_item;
+let l=0;
+      let totalF=0;
+      let subtotal=document.querySelector('.subtotal span');
+      let discount=document.querySelector('.discount span');
+      let lastTotal=document.querySelector('.last_total span');
+   
+
 
 window.addEventListener("load", content);
 
 function content() {
+
   for (let i = 0; i < data.length; i++) {
     pizza_options.innerHTML += `<div class="item ">
      <img class="pizza_img" src="${data[i]["image"]}" alt="${data[i]["name"]}" width="90%">
@@ -38,7 +47,7 @@ function content() {
 
       pizza_detail.innerHTML = ` <div class="pizza_det">
     <div class="one">
-      <i class="fas fa-arrow-left"> Back to menu</i>
+      <i class="fas fa-arrow-left">Back to menu</i>
       <img src="${data[i]["image"]}" alt="${data[i]["name"]}" width="30%" />
     </div>
     <div class="two">
@@ -64,7 +73,7 @@ function content() {
           <span class="plus"><i class="fas fa-plus-circle"></i></span>
         </span>
       </p>
-      <button class="pay">Add to Cart</button>
+      <button class="pay">Confirm Order</button>
       <button class="go_pay">PAY</button>
     </div>
   </div>`;
@@ -77,14 +86,18 @@ function content() {
       let total = document.querySelector(".suma");
       let qt = 1;
       let pric = total.innerHTML;
+      console.log(pric);
+      
+      
 
       back_icon.addEventListener("click", () => {
-        if (quantity.innerHTML > 1) {
-          alert("Confirm your order before go back");
-        } else {
-          pizza_options.style.display = "flex";
-          pizza_detail.innerHTML = "";
+        if(quantity.innerHTML > 1){
+          alert('Confirm your order before go back')
+        }else{
+           pizza_options.style.display = "flex";
+        pizza_detail.innerHTML = "";
         }
+       
       });
       minus.addEventListener("click", () => {
         if (quantity.innerHTML > 1) {
@@ -100,20 +113,39 @@ function content() {
           total.innerHTML = parseFloat(pric) * qt;
         }
       });
-      go_pay.addEventListener("click", () => {
-        if (pay.style.cssText == "background-color: rgb(158, 179, 163);") {
-          payment.style.display = "flex";
-        } else {
-          alert("Confirm your order before pay");
+      go_pay.addEventListener('click',()=>{
+        if (pay.style.cssText=='background-color: rgb(158, 179, 163);') {
+        payment.style.display='flex';
+        
+        }else{
+          alert('Confirm your order before pay')
         }
+        
+        
       });
-      pay.addEventListener("click", last_pay);
+      pay.addEventListener('click',last_pay)
 
-      function last_pay() {
-        orders.innerHTML = parseInt(orders.innerHTML) + 1;
-        total.innerHTML = parseFloat(pric);
+      function last_pay(){
+        orders.innerHTML=parseInt(orders.innerHTML)+parseInt(quantity.innerHTML);
+        
+        l=quantity.innerHTML;
+        totalF+=parseFloat(pric)*qt;
+        console.log(totalF);
+        pay.style.cssText='background-color: rgb(158, 179, 163);';
+        //total.innerHTML = pric; 
+       bill();
         quantity.innerHTML = 1;
-        pay.style.cssText = "background-color: rgb(158, 179, 163);";
+        
+      }
+
+      function bill(){
+        let orderDetail=document.querySelector('.order_detail');
+        orderDetail.innerHTML+=`<div><img class="pay_img" src="${data[i]["image"]}" alt="" width="30%" />
+        <span class="pay_name">${data[i]["name"]}</span>
+        <span class="pay_qt">${l}</span></div>`;
+        subtotal.innerHTML=totalF;
+        discount.innerHTML=(totalF*.10).toFixed(2);
+        lastTotal.innerHTML=totalF-parseFloat(discount.innerHTML)
       }
     });
   });
