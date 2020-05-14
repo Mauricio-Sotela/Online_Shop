@@ -164,9 +164,10 @@ function content() {
         element.addEventListener("click", () => {
           if (element.style.backgroundColor == "rgb(248, 110, 110)") {
             element.style.backgroundColor = "rgb(98, 91, 91)";
-            total.innerHTML+=parseFloat(0.50);
+            total.innerHTML=parseFloat(total.innerHTML)-parseFloat(0.50);
           } else {
             element.style.backgroundColor = "rgb(248, 110, 110)";
+            total.innerHTML=parseFloat(total.innerHTML)+parseFloat(0.50);
           }
         });
       });
@@ -177,7 +178,7 @@ function content() {
 // //////////////PAYMENT CONFIRMATION///////////
 confirm.addEventListener("click", () => {
   payment.style.display = "none";
-  alert("You order have been pay and done.");
+  alert("You order have been paid.");
   location.reload();
 });
 
