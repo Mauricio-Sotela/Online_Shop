@@ -3,6 +3,7 @@ const products = [
     name: "Roberto",
     image: "./img/Pizza-round/0.png",
     id: 0,
+    type:"gluten",
     price: "13.49",
     description: [
       " Roast beef",
@@ -20,6 +21,7 @@ const products = [
     name: "Luigi",
     image: "./img/Pizza-round/1.png",
     id: 1,
+    type:"vegan",
     price: "11.99",
     description: [
       " Jamon",
@@ -36,6 +38,7 @@ const products = [
   {
     name: "Four Meat",
     image: "./img/Pizza-round/3.png",
+    type:"gluten",
     id: 2,
     price: "13.99",
     description: [
@@ -51,6 +54,7 @@ const products = [
   {
     name: "Marinara",
     image: "./img/Pizza-round/2.png",
+    type:"vegan",
     id: 3,
     price: "12.99",
     description: [
@@ -66,6 +70,7 @@ const products = [
   {
     name: "Anchovy",
     image: "./img/Pizza-round/4.png",
+    type:"gluten",
     id: 4,
     price: "14.99",
     description: [" Ham", " Chared pineapple", " Cheddar", " Jalapeno"],
@@ -75,6 +80,7 @@ const products = [
   {
     name: "Margarita",
     image: "./img/Pizza-round/5.png",
+    type:"vegan",
     id: 5,
     price: "15.50",
     description: [
@@ -90,6 +96,7 @@ const products = [
   {
     name: "Seafood",
     image: "./img/Pizza-round/0.png",
+    type:"guten",
     id: 6,
     price: "14.99",
     description: [
@@ -105,6 +112,7 @@ const products = [
       {
     name: "Veggie",
     image: "./img/Pizza-round/1.png",
+    type:"vegan",
     id: 7,
     price: "10.99",
     description: [
@@ -121,6 +129,7 @@ const products = [
   {
     name: "Cabanossi",
     image: "./img/Pizza-round/3.png",
+    type:"gluten",
     id: 8,
     price: "14.99",
     description: [
