@@ -11,6 +11,7 @@ nav {
     height: 30vh;
     flex-direction: column;
   }
+  
   @include respond(iPad) {
     height: 25vh;
     flex-direction: column;
@@ -29,10 +30,13 @@ nav {
       width: 55vw;
       height: 15vh;
     }
+
     @include respond(iPad) {
       width: 75vw;
       height: 20vh;
     }
+
+
     p {
       width: 20vw;
       height: 7vh;
@@ -45,13 +49,16 @@ nav {
         height: 10vh;
         font-size: 12vw;
       }
+
       @include respond(iPad) {
         width: 70vw;
         height: 15vh;
         font-size: 15vw;
+
       }
     }
   }
+  
   //Filters box
   .filters-box {
     width: 45vw;
