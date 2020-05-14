@@ -166,7 +166,7 @@ function content() {
 // //////////////PAYMENT CONFIRMATION///////////
 confirm.addEventListener("click", () => {
   payment.style.display = "none";
-  alert("You order have been pay.");
+  alert("You order have been pay and done.");
   location.reload();
 });
 
