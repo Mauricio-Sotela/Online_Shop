@@ -16,10 +16,10 @@ $breakpoint argument choices:
     }
   }
  
-  @if $breakpoint == iPad {
-    @media (max-width: 768px) {
-      @content;
+//   @if $breakpoint == iPad {
+//     @media (max-width: 768px) {
+//       @content;
 
-  }
-}
+//   }
+// }
 }
