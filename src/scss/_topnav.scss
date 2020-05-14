@@ -6,7 +6,13 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-//Logo
+
+  @include respond(phone) {
+    height: 30vh;
+    flex-direction: column;
+  }
+
+  //Logo
   .logo {
     width: 25vw;
     height: 10vh;
@@ -15,20 +21,36 @@ nav {
     align-items: flex-end;
     font-family: "Caveat", cursive;
 
+    @include respond(phone) {
+      width: 55vw;
+      height: 15vh;
+    }
     p {
       width: 20vw;
-      height: 6vh;
+      height: 7vh;
       font-size: 3.5vw;
       color: #f86e6e;
       // color: #FD933A;
+
+      @include respond(phone) {
+        width: 40vw;
+        height: 10vh;
+        font-size: 12vw;
+      }
     }
   }
-//Filters box
+  //Filters box
   .filters-box {
     width: 45vw;
     height: 10vh;
     display: flex;
     flex-direction: column;
+
+    @include respond(phone) {
+      width: 75vw;
+      height: 7vh;
+      align-items: center;
+    }
 
     .title {
       width: 11vw;
@@ -38,6 +60,10 @@ nav {
       justify-content: center;
       align-items: flex-end;
       color: #a6a6a5;
+
+      @include respond(phone) {
+        display: none;
+      }
     }
 
     .filters {
@@ -48,24 +74,34 @@ nav {
       justify-content: space-evenly;
       align-items: flex-end;
 
+      @include respond(phone) {
+        width: 65vw;
+        height: 7vh;
+      }
       & > * {
         font-size: 1.2vw;
 
+        @include respond(phone) {
+          font-size: 2.7vw;
+        }
         &:last-of-type {
           color: #a6a6a5;
         }
       }
     }
   }
-//Cart Box
+  //Cart Box
   .cart {
     width: 15vw;
     height: 10vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
 
-  
+    @include respond(phone) {
+      width: 55vw;
+      height: 7vh;
+    }
 
     .fa-concierge-bell {
       font-size: 1.8vw;
@@ -73,22 +109,36 @@ nav {
       justify-content: center;
       align-items: flex-end;
       color: #f86e6e;
+
+      @include respond(phone) {
+        font-size: 3.8vw;
+      }
     }
 
     .order-status {
       font-size: 1.2vw;
       font-weight: bold;
+
+      @include respond(phone) {
+        font-size: 2.8vw;
+      }
     }
 
     .items-no {
-        width: 2.1vw;
-        height: 4vh;
+      width: 2.1vw;
+      height: 4vh;
       font-size: 1.4vw;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 100%;
-      border:1px solid #f86e6e;
+      border: 1px solid #f86e6e;
+
+      @include respond(phone) {
+        width: 4.1vw;
+        height: 2.5vh;
+        font-size: 2.4vw;
+      }
     }
   }
 }

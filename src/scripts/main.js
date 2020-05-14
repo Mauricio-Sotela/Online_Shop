@@ -11,12 +11,13 @@ let pizza_name;
 let pizza_price;
 let pizza_description;
 let pizza_item;
-let l=0;
-      let totalF=0;
-      let subtotal=document.querySelector('.subtotal span');
-      let discount=document.querySelector('.discount span');
-      let lastTotal=document.querySelector('.last_total span');
-   
+let l = 0;
+let totalF = 0;
+let subtotal = document.querySelector(".subtotal span");
+let discount = document.querySelector(".discount span");
+let lastTotal = document.querySelector(".last_total span");
+let confirm = document.querySelector('.confirm');
+let bill_status = document.querySelector('.cart')
 
 
 window.addEventListener("load", content);
@@ -47,7 +48,7 @@ function content() {
 
       pizza_detail.innerHTML = ` <div class="pizza_det">
     <div class="one">
-      <i class="fas fa-arrow-left">Back to menu</i>
+      <i class="fas fa-arrow-left"> Back to menu</i>
       <img src="${data[i]["image"]}" alt="${data[i]["name"]}" width="30%" />
     </div>
     <div class="two">
@@ -86,7 +87,7 @@ function content() {
       let total = document.querySelector(".suma");
       let qt = 1;
       let pric = total.innerHTML;
-      console.log(pric);
+      
       
       
 
@@ -130,7 +131,6 @@ function content() {
         
         l=quantity.innerHTML;
         totalF+=parseFloat(pric)*qt;
-        console.log(totalF);
         pay.style.cssText='background-color: rgb(158, 179, 163);';
         //total.innerHTML = pric; 
        bill();
@@ -144,9 +144,19 @@ function content() {
         <span class="pay_name">${data[i]["name"]}</span>
         <span class="pay_qt">${l}</span></div>`;
         subtotal.innerHTML=totalF;
-        discount.innerHTML=(totalF*.10).toFixed(2);
-        lastTotal.innerHTML=totalF-parseFloat(discount.innerHTML)
+        discount.innerHTML = (totalF * 0.1).toFixed(2);
+        lastTotal.innerHTML = totalF - parseFloat(discount.innerHTML);
       }
     });
   });
 }
+
+confirm.addEventListener('click',()=>{
+  payment.style.display='none';
+  alert('You order have been pay.')
+});
+
+bill_status.addEventListener('click',()=>{
+  payment.style.display='flex';
+
+});
