@@ -79,8 +79,6 @@
         min-width: 10vw;
         min-height: 10vh;
         width: 25%;
-        height: 50vh;
-        //background-color: rgb(158, 158, 179);
         margin: 1rem;
         padding: 0.5rem;
         border-radius: 1rem;
@@ -94,7 +92,6 @@
           height: 50vh;
           margin: 0;
           padding: 0;
-          margin: 6vw;
         }
         @include respond(iPad) {
           display: flex;
@@ -113,6 +110,7 @@
           //  width: 14vw;
           //  height: 18vh;
           width: 70%;
+          margin-bottom: .5rem;
 
           @include respond(phone) {
             width: 80%;
@@ -153,13 +151,11 @@
 
         .description {
           width: 14vw;
-          height: 18vh;
           font-size: 0.8vw;
           text-align: center;
          
           @include respond(phone) {
             width: 50vw;
-            height: 18vh;
             font-size: 3.5vw;
             text-align: center;
           }
