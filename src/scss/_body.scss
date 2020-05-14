@@ -488,12 +488,16 @@
             background-color: rgb(98, 91, 91);
             color: white;
             border-radius: 2rem;
+            
 
             @include respond(phone) {
               width: 2vw;
               padding: 0.3rem;
               margin: 10vh 1vw;
               font-size: 2.2vw;
+            }
+            .selected{
+              background-color: rgb(246, 244, 105);
             }
           }
         }
@@ -554,4 +558,5 @@
       }
     }
   }
+  
 }

@@ -26,7 +26,6 @@ let showAll = document.querySelector(".filter3");
 ///////////PAGE LOAD FUNCTIO*****
 window.addEventListener("load", content);
 
-
 // ////////////MAIN FUNCTION/////////
 function content() {
   for (let i = 0; i < data.length; i++) {
@@ -61,9 +60,9 @@ function content() {
       <div class="pizza_name">${data[i]["name"]}</div>
       <div class="pizza_description">${data[i]["info"]}</div>
       <p class="pizza_size">Size:
-        <span>Small</span>
-        <span>Medium</span>
-        <span>Large</span>
+        <span class="choose">Small</span>
+        <span class="choose">Medium</span>
+        <span class="choose">Large</span>
       </p>
       <p class="options"> Options:
         <span class="choose">Onions</span>
@@ -85,7 +84,8 @@ function content() {
     </div>
   </div>`;
 
-  // ////////VARIABLES DECLARATION AFTER INSERTING PIZZA ITEMS////
+      // ////////VARIABLES DECLARATION AFTER INSERTING PIZZA ITEMS////
+      let selected = document.querySelectorAll(".choose");
       let pay = document.querySelector(".pay");
       let go_pay = document.querySelector(".go_pay");
       let back_icon = document.querySelector(".fa-arrow-left");
@@ -96,7 +96,7 @@ function content() {
       let qt = 1;
       let pric = total.innerHTML;
 
-        // ///////FUNCTION GO BACK TO MAIN PAGE
+      // ///////FUNCTION GO BACK TO MAIN PAGE
       back_icon.addEventListener("click", () => {
         if (quantity.innerHTML > 1) {
           alert("Confirm your order before go back");
@@ -133,7 +133,7 @@ function content() {
         }
       });
 
-        // ///FUNCTION TO CONFIRM ORDER///
+      // ///FUNCTION TO CONFIRM ORDER///
       pay.addEventListener("click", last_pay);
       function last_pay() {
         orders.innerHTML =
@@ -147,7 +147,7 @@ function content() {
         total.innerHTML = `${data[i]["price"]}`;
       }
 
-        // ///FUNCTION TO CONFIRM ORDER AND INSERT ORDERS IN THE BILL//
+      // ///FUNCTION TO CONFIRM ORDER AND INSERT ORDERS IN THE BILL//
       function bill() {
         let orderDetail = document.querySelector(".order_detail");
         orderDetail.innerHTML += `<div><img class="pay_img" src="${data[i]["image"]}" alt="" width="5%" />
@@ -159,6 +159,17 @@ function content() {
           2
         );
       }
+      // ////SELECT EXTRAS FOR THE PIZZA
+      selected.forEach((element) => {
+        element.addEventListener("click", () => {
+          if (element.style.backgroundColor == "rgb(248, 110, 110)") {
+            element.style.backgroundColor = "rgb(98, 91, 91)";
+            total.innerHTML+=parseFloat(0.50);
+          } else {
+            element.style.backgroundColor = "rgb(248, 110, 110)";
+          }
+        });
+      });
     });
   });
 }
@@ -175,7 +186,7 @@ bill_status.addEventListener("click", () => {
   payment.style.display = "flex";
 });
 
-// ////////////////HIDE PAYMENT PAGE 
+// ////////////////HIDE PAYMENT PAGE
 hide_pay.addEventListener("click", () => {
   payment.style.display = "none";
 });
