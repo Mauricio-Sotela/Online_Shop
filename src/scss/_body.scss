@@ -3,9 +3,11 @@
   display: flex;
   flex-direction: row;
   width: 100vw;
+  height: 90vh;
 
   .main_section {
-    width: 80vw;   
+    width: 80vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     // Top category name
@@ -20,6 +22,7 @@
     //The product gallery
     .menu_options {
       width: 80vw;
+      height: 80vh;
       padding-top: 5vh;
       display: flex;
       flex-direction: row;
@@ -74,7 +77,7 @@
         }
       }
     }
-
+    
     // Payment page
     .payment {
       position: absolute;
