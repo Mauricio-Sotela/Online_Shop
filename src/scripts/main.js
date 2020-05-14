@@ -5,6 +5,7 @@ let data = JSON.parse(data1);
 let pizza_options = document.querySelector(".menu_options");
 let orders = document.querySelector(".items-no");
 let payment = document.querySelector(".payment");
+let pizza = document.querySelector(".pizza");
 let img;
 let icon;
 let pizza_name;
@@ -25,9 +26,10 @@ let showAll = document.querySelector(".filter3");
 
 ///////////PAGE LOAD FUNCTIO*****
 window.addEventListener("load", content);
-
+pizza.addEventListener("click", content);
 // ////////////MAIN FUNCTION/////////
 function content() {
+  pizza_options.innerHTML='';
   for (let i = 0; i < data.length; i++) {
     pizza_options.innerHTML += `<div class="item ">
      <img class="pizza_img" src="${data[i]["image"]}" alt="${data[i]["name"]}" width="90%">
