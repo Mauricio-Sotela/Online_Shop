@@ -1,6 +1,5 @@
 # First Group-project
 
-* Mauricio
-* Simona
-* Wajih
-
+- Mauricio
+- Simona
+- Wajih
