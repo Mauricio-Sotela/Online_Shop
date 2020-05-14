@@ -11,6 +11,11 @@ nav {
     height: 30vh;
     flex-direction: column;
   }
+  
+  @include respond(iPad) {
+    height: 25vh;
+    flex-direction: column;
+  }
 
   //Logo
   .logo {
@@ -25,6 +30,13 @@ nav {
       width: 55vw;
       height: 15vh;
     }
+
+    @include respond(iPad) {
+      width: 75vw;
+      height: 20vh;
+    }
+
+
     p {
       width: 20vw;
       height: 7vh;
@@ -37,8 +49,16 @@ nav {
         height: 10vh;
         font-size: 12vw;
       }
+
+      @include respond(iPad) {
+        width: 70vw;
+        height: 15vh;
+        font-size: 15vw;
+
+      }
     }
   }
+  
   //Filters box
   .filters-box {
     width: 45vw;
@@ -49,6 +69,11 @@ nav {
     @include respond(phone) {
       width: 75vw;
       height: 7vh;
+      align-items: center;
+    }
+    @include respond(iPad) {
+      width: 100vw;
+      height: 30vh;
       align-items: center;
     }
 
@@ -62,6 +87,9 @@ nav {
       color: #a6a6a5;
 
       @include respond(phone) {
+        display: none;
+      }
+      @include respond(iPad) {
         display: none;
       }
     }
@@ -78,11 +106,18 @@ nav {
         width: 65vw;
         height: 7vh;
       }
+      @include respond(iPad) {
+        width: 80vw;
+        height: 10vh;
+      }
       & > * {
         font-size: 1.2vw;
 
         @include respond(phone) {
           font-size: 2.7vw;
+        }
+        @include respond(iPad) {
+          font-size: 4vw;
         }
         &:last-of-type {
           color: #a6a6a5;
@@ -102,6 +137,10 @@ nav {
       width: 55vw;
       height: 7vh;
     }
+    @include respond(iPad) {
+      width: 70vw;
+      height: 10vh;
+    }
 
     .fa-concierge-bell {
       font-size: 1.8vw;
@@ -113,6 +152,9 @@ nav {
       @include respond(phone) {
         font-size: 3.8vw;
       }
+      @include respond(iPad) {
+        font-size: 4.5vw;
+      }
     }
 
     .order-status {
@@ -121,6 +163,9 @@ nav {
 
       @include respond(phone) {
         font-size: 2.8vw;
+      }
+      @include respond(iPad) {
+        font-size: 3.5vw;
       }
     }
 
@@ -138,6 +183,11 @@ nav {
         width: 4.1vw;
         height: 2.5vh;
         font-size: 2.4vw;
+      }
+      @include respond(iPad) {
+        width: 5.1vw;
+        height: 3.5vh;
+        font-size: 3.4vw;
       }
     }
   }
