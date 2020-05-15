@@ -1,6 +1,6 @@
 const salads = [
     {
-      name: "Roberto",
+      name: "Change the name",
       image: "./img/salad/01.png",
       id: 0,
       type:"gluten",
@@ -15,10 +15,10 @@ const salads = [
       ],
       info:
   
-        " This delicious pizza is made for you from the tastiest ingredients: Roast beef, Bell peppers, Mushrooms, Onions, Tomatoes, Marinara.",
+        " Salad",
     },
     {
-      name: "Luigi",
+      name: "Change the name",
       image: "./img/salad/02.png",
       id: 1,
       type:"vegan",
@@ -33,10 +33,10 @@ const salads = [
         " Marinara",
       ],
       info:
-        "This delicious pizza is made for you from the tastiest ingredients: Jamon, Bell peppers, Pepperoncini, Olives, Mozzarella, Gouda, Marinara.",
+        "Salad",
     },
     {
-      name: "Four Meat",
+      name: "Change the name",
       image: "./img/salad/03.png",
       type:"gluten",
       id: 2,
@@ -49,10 +49,10 @@ const salads = [
         " Jalapeno",
       ],
       info:
-        " This delicious pizza is made for you from the tastiest ingredients: Ham, Pizza sauce, Chared pineapple, Cheddar, Jalapeno.",
+        " Salad",
     },
     {
-      name: "Marinara",
+      name: "Change the name",
       image: "./img/salad/04.png",
       type:"vegan",
       id: 3,
@@ -65,20 +65,20 @@ const salads = [
         " Jalapeno",
       ],
       info:
-        " This delicious pizza is made for you from the tastiest ingredients: Ham, Pizza sauce, Chared pineapple, Cheddar, Jalapeno.",
+        " Salad",
     },
     {
-      name: "Anchovy",
+      name: "Change the name",
       image: "./img/salad/05.png",
       type:"gluten",
       id: 4,
       price: "6.99",
       description: [" Ham", " Chared pineapple", " Cheddar", " Jalapeno"],
       info:
-        "This delicious pizza is made with the tastiest ingredients: Pizza Sauce, Salami, Cheddar, Jalapeno.",
+        "Salad",
     },
     {
-      name: "Margarita",
+      name: "Change the name",
       image: "./img/salad/06.png",
       type:"vegan",
       id: 5,
@@ -91,10 +91,10 @@ const salads = [
         " Jalapeno",
       ],
       info:
-        " This delicious pizza is made with the tastiest ingredients: Pizza Sauce, Cheese, Jalapeno.",
+        "Salad",
     },
     {
-      name: "Seafood",
+      name: "Chicken Salad",
       image: "./img/salad/07.png",
       type:"guten",
       id: 6,
@@ -107,10 +107,10 @@ const salads = [
         " Jalapeno",
       ],
       info:
-        " This delicious pizza is made with the tastiest ingredients: Tomatoes, Pizza Sauce, Salami, Cheddar, Jalapeno.",
+        "Salad",
     },
         {
-      name: "Veggie",
+      name: "Change the name",
       image: "./img/salad/04.png",
       type:"vegan",
       id: 7,
@@ -124,10 +124,10 @@ const salads = [
         " Eggplant",
       ],
       info:
-        " This delicious pizza is made with the tastiest ingredients: Tomatoes, Pizza sauce, Chared pineapple, jalapeno, Eggplant.",
+        "Salad",
     },
     {
-      name: "Cabanossi",
+      name: "Change the name",
       image: "./img/salad/06.png",
       type:"gluten",
       id: 8,
@@ -140,7 +140,7 @@ const salads = [
         " Mozzarella",
       ],
       info:
-        " This delicious pizza is made with the tastiest ingredients: Tomatoes, Kabana, Garlic oil, Onions, Mozzarella.",
+        "Salad",
     },
   ];
   

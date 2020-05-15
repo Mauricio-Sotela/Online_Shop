@@ -52,7 +52,7 @@ const drinks = [
         " Drink",
     },
     {
-      name: "Cocktails",
+      name: "Cocktail",
       image: "./img/drinks/04.png",
       type:"vegan",
       id: 3,
