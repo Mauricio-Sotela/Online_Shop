@@ -1,6 +1,6 @@
 const drinks = [
     {
-      name: "Roberto",
+      name: "Beer",
       image: "./img/drinks/01.png",
       id: 0,
       type:"gluten",
@@ -15,10 +15,10 @@ const drinks = [
       ],
       info:
   
-        " This delicious pizza is made for you from the tastiest ingredients: Roast beef, Bell peppers, Mushrooms, Onions, Tomatoes, Marinara.",
+        "Drink",
     },
     {
-      name: "Luigi",
+      name: "Cola",
       image: "./img/drinks/02.png",
       id: 1,
       type:"vegan",
@@ -33,10 +33,10 @@ const drinks = [
         " Marinara",
       ],
       info:
-        "This delicious pizza is made for you from the tastiest ingredients: Jamon, Bell peppers, Pepperoncini, Olives, Mozzarella, Gouda, Marinara.",
+        "Drink",
     },
     {
-      name: "Four Meat",
+      name: "Natural Juice",
       image: "./img/drinks/03.png",
       type:"gluten",
       id: 2,
@@ -49,10 +49,10 @@ const drinks = [
         " Jalapeno",
       ],
       info:
-        " This delicious pizza is made for you from the tastiest ingredients: Ham, Pizza sauce, Chared pineapple, Cheddar, Jalapeno.",
+        " Drink",
     },
     {
-      name: "Marinara",
+      name: "Cocktails",
       image: "./img/drinks/04.png",
       type:"vegan",
       id: 3,
@@ -65,20 +65,20 @@ const drinks = [
         " Jalapeno",
       ],
       info:
-        " This delicious pizza is made for you from the tastiest ingredients: Ham, Pizza sauce, Chared pineapple, Cheddar, Jalapeno.",
+        " Drink",
     },
     {
-      name: "Anchovy",
+      name: "Wine",
       image: "./img/drinks/05.png",
       type:"gluten",
       id: 4,
       price: "6.99",
       description: [" Ham", " Chared pineapple", " Cheddar", " Jalapeno"],
       info:
-        "This delicious pizza is made with the tastiest ingredients: Pizza Sauce, Salami, Cheddar, Jalapeno.",
+        "Drink",
     },
     {
-      name: "Margarita",
+      name: "Tea",
       image: "./img/drinks/06.png",
       type:"vegan",
       id: 5,
@@ -91,10 +91,10 @@ const drinks = [
         " Jalapeno",
       ],
       info:
-        " This delicious pizza is made with the tastiest ingredients: Pizza Sauce, Cheese, Jalapeno.",
+        " Drink",
     },
     {
-      name: "Seafood",
+      name: "Coffee",
       image: "./img/drinks/07.png",
       type:"guten",
       id: 6,
@@ -107,10 +107,10 @@ const drinks = [
         " Jalapeno",
       ],
       info:
-        " This delicious pizza is made with the tastiest ingredients: Tomatoes, Pizza Sauce, Salami, Cheddar, Jalapeno.",
+        " Drink",
     },
         {
-      name: "Veggie",
+      name: "Smoothie",
       image: "./img/drinks/08.png",
       type:"vegan",
       id: 7,
@@ -124,10 +124,10 @@ const drinks = [
         " Eggplant",
       ],
       info:
-        " This delicious pizza is made with the tastiest ingredients: Tomatoes, Pizza sauce, Chared pineapple, jalapeno, Eggplant.",
+        " Drink",
     },
     {
-      name: "Cabanossi",
+      name: "Homemade Drink",
       image: "./img/drinks/09.png",
       type:"gluten",
       id: 8,
@@ -140,7 +140,7 @@ const drinks = [
         " Mozzarella",
       ],
       info:
-        " This delicious pizza is made with the tastiest ingredients: Tomatoes, Kabana, Garlic oil, Onions, Mozzarella.",
+        "Drink",
     },
   ];
   
@@ -154,7 +154,7 @@ drink.addEventListener('click',()=>{
      <i class="fas fa-plus-circle icon"></i>
      <span class="price">$${drinks[i]["price"]}</span>
      <span class="name">${drinks[i]["name"]}</span>
-     <span class="description">${drinks[i]["description"]}.</span>
+     <span class="description">${drinks[i]["info"]}.</span>
     </div>`;
         
     }

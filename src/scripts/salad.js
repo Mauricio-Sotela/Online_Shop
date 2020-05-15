@@ -155,7 +155,7 @@ salad.addEventListener('click',()=>{
      <i class="fas fa-plus-circle icon"></i>
      <span class="price">$${salads[i]["price"]}</span>
      <span class="name">${salads[i]["name"]}</span>
-     <span class="description">${salads[i]["description"]}.</span>
+     <span class="description">${salads[i]["info"]}.</span>
     </div>`;
         
     }

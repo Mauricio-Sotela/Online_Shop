@@ -184,7 +184,7 @@ confirm.addEventListener("click", () => {
   location.reload();
 });
 
-//////////// ORDER STATUS ... TOP RIGHT CORNER
+//////////// DISPLAY ORDER STATUS ... TOP RIGHT CORNER
 bill_status.addEventListener("click", () => {
   payment.style.display = "flex";
 });
