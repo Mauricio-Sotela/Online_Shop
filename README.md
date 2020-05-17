@@ -26,7 +26,7 @@ Credits go to:
 
 <br>
 <p align ="center">
-  <img src="https://media.giphy.com/media/TIjWqT59VP1J7b8IiW/200w_d.gif">
+  <img src="https://media.giphy.com/media/TIjWqT59VP1J7b8IiW/source.gif">
 </p>
 <br>
 <p align ="center">
