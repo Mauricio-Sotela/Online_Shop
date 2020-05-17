@@ -6,6 +6,8 @@ Credits go to:
 - Simona:     https://github.com/SimonaHriscu;
 - Wajih:      https://github.com/Wajih-alzouhairy.
 
+<img src="https://media.giphy.com/media/65HR2UL6nn6XMSUoRA/source.gif">
+
 ## Preview Web version:
 
 ### Front page:
@@ -22,7 +24,17 @@ Credits go to:
 
 ## Mobile version:
 
+<br>
+<p align ="center">
+  <img src="https://media.giphy.com/media/TIjWqT59VP1J7b8IiW/source.gif">
+</p>
+<br>
+<p align ="center">
+  <img src="https://media.giphy.com/media/gdZpDUp0kAR3p98hVp/source.gif">
+</p>
+
 ### Front page:
+
 ![Imgur](https://i.imgur.com/d37mWIo.png?1)
 
 
