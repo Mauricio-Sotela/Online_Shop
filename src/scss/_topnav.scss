@@ -105,7 +105,7 @@ nav {
       .filter3 {
         height: fit-content;
         padding: 0.5rem;
-        background-color: rgba(248, 110, 110, 0.164);
+       // background-color: rgba(248, 110, 110, 0.164);
         border-radius: 1rem;
         cursor: pointer;
       }
@@ -138,7 +138,7 @@ nav {
     width: 15vw;
     height: fit-content;
     padding: 0.5rem;
-    background-color: rgba(248, 110, 110, 0.164);
+    // background-color: rgba(248, 110, 110, 0.164);
     border-radius: 2rem;
     cursor: pointer;
     display: flex;
@@ -148,6 +148,7 @@ nav {
     @include respond(phone) {
       width: 55vw;
       height: fit-content;
+      background-color: rgba(248, 110, 110, 0.164);
     }
     @include respond(iPad) {
       width: 70vw;
