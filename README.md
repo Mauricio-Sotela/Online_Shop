@@ -25,11 +25,10 @@ Credits go to:
 ### Front page:
 ![Imgur](https://i.imgur.com/d37mWIo.png?1)
 
-![Imgur](https://i.imgur.com/o0GGeos.png?1)
 
 ### Order page:
 
-![Imgur](https://i.imgur.com/Mxll5J4.png?1)
+![Imgur](https://i.imgur.com/o0GGeos.png?1)
 
-<!-- ### Pay page:
-![Imgur](https://i.imgur.com/SGyAaRt.png?1) -->
+### Pay page:
+![Imgur](https://i.imgur.com/SGyAaRt.png?1)
