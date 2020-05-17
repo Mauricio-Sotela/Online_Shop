@@ -21,6 +21,7 @@
     height: 90vh;
     display: flex;
     flex-direction: column;
+    
 
     @include respond(phone) {
       width: 75vw;
@@ -58,11 +59,13 @@
       flex-wrap: wrap;
       // display: none;
       overflow-y: scroll;
+      
 
       @include respond(phone) {
         width: 80vw;
         height: 70vh;
         padding: 0;
+        margin-left: 7vw;
       }
       @include respond(iPad) {
         width: 80vw;
@@ -202,7 +205,7 @@
         }
 
         .p_div {
-          width: 40vw;
+          width: 30vw;
           display: flex;
           justify-content: space-between;
           margin: 2rem 0;
@@ -227,10 +230,6 @@
             border-radius: 2rem;
             cursor: pointer;
 
-            border-radius: 2rem;
-            cursor: pointer;
-
-            // border-radius: 2rem;
 
             @include respond(phone) {
               font-size: 1rem;
@@ -382,6 +381,7 @@
           transform: translateX(0%);
         }
       }
+      
 
       @include respond(phone) {
         width: 100%;
@@ -389,6 +389,7 @@
         background-color: white;
         display: flex;
         flex-direction: column;
+        margin-top: 2vh;
         animation: Slide-in 1s, ease-in-out backwards;
       }
       .one {
@@ -405,17 +406,15 @@
 
         i {
           //background-color: rgb(216, 231, 216);
-          font-size: 1vw;
+          font-size: 1.2vw;
           text-transform: uppercase;
           cursor: pointer;
-          width: fit-content;
-          height: fit-content;
-          // margin: 1rem;
-          // padding: 1rem;
-          border-radius: 1rem;
+          // width: fit-content;
+          // height: fit-content;
+          
 
           @include respond(phone) {
-            font-size: 3vw;
+            font-size: 3.7vw;
           }
         }
         img {
