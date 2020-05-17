@@ -26,12 +26,13 @@ Credits go to:
 
 <br>
 <p align ="center">
-  <img src="https://media.giphy.com/media/TIjWqT59VP1J7b8IiW/source.gif">
+  <img src="https://media.giphy.com/media/kZLO4stxHVE4vpOrbP/giphy.gif">
 </p>
 <br>
 <p align ="center">
   <img src="https://media.giphy.com/media/gdZpDUp0kAR3p98hVp/giphy.gif">
 </p>
+<br>
 
 ### Front page:
 <p align ="center">
