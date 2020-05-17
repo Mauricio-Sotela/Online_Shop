@@ -194,6 +194,8 @@ hide_pay.addEventListener("click", () => {
   payment.style.display = "none";
 });
 
+
+
 // ///////////////////////VEGAN FILTER//////////
 vegan.addEventListener("click", () => {
   pizza_options.innerHTML = "";
