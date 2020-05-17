@@ -147,11 +147,11 @@ nav {
 
     @include respond(phone) {
       width: 55vw;
-      height: 7vh;
+      height: fit-content;
     }
     @include respond(iPad) {
       width: 70vw;
-      height: 10vh;
+      height: fit-content;
     }
 
     .fa-concierge-bell {
