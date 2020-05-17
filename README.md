@@ -30,17 +30,24 @@ Credits go to:
 </p>
 <br>
 <p align ="center">
-  <img src="https://media.giphy.com/media/gdZpDUp0kAR3p98hVp/source.gif">
+  <img src="https://media.giphy.com/media/gdZpDUp0kAR3p98hVp/giphy.gif">
 </p>
 
 ### Front page:
-
-![Imgur](https://i.imgur.com/d37mWIo.png?1)
+<p align ="center">
+  <img src="https://i.imgur.com/d37mWIo.png?1">
+</p>
+<!-- ![Imgur](https://i.imgur.com/d37mWIo.png?1) -->
 
 
 ### Order page:
-
-![Imgur](https://i.imgur.com/o0GGeos.png?1)
+<p align ="center">
+  <img src="https://i.imgur.com/o0GGeos.png?1">
+</p>
+<!-- ![Imgur](https://i.imgur.com/o0GGeos.png?1) -->
 
 ### Pay page:
-![Imgur](https://i.imgur.com/SGyAaRt.png?1)
+<p align ="center">
+  <img src="https://i.imgur.com/SGyAaRt.png?1">
+</p>
+<!-- ![Imgur](https://i.imgur.com/SGyAaRt.png?1) -->
