@@ -25,7 +25,12 @@ body {
   // background-position: right;
   // background-size: contain;
   // background-repeat: no-repeat;
-  
+  // @include respond(phone) {
+  // background-image: url(../img/background2.png);
+  // background-position: right;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // }
 }
 
 // html {
