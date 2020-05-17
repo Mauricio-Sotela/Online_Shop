@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take Away Food</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d882e6387b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Top NAV part -->
+    <!-- Simona -->
+    <nav>
+      <div class="logo">
+        <p>PizzaTime</p>
+      </div>
+
+      <div class="filters-box">
+        <div class="title">Filters</div>
+        <div class="filters">
+          <div class="filter1">#VEGETARIAN</div>
+          <div class="filter2">#GLUTEN FREE</div>
+          <div class="filter3">ALL</div>
+        </div>
+      </div>
+
+      <div class="cart">
+        <i class="fas fa-concierge-bell"></i>
+        <div class="order-status">ORDER STATUS</div>
+        <!-- <i class="far fa-circle"></i> -->
+        <div class="items-no">0</div>
+      </div>
+    </nav>
+
+    <section class="big-section">
+      <!-- left NAV -->
+      <!-- Wajih -->
+      <div class="leftItems">
+        <div class="menu-box">
+          <h1 class="categories">Categories</h1>
+          <ul class="menu">
+            <li class="pizza">Pizza</li>
+            <li class="salads">Salads</li>
+            <li class="drinks">Drinks</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Product gallery part -->
+      <!--mauricio-->
+      <div class="main_section">
+        <div class="menu_name"></div>
+        <div class="menu_options"></div>
+        <div class="pizza_detail"></div>
+
+       <!-- Payment New page -->
+
+       <div class="payment">
+        <div class="content">
+          <div class="p_div">
+            <span>Order Status</span>
+            <i class="fas fa-arrow-right hide_pay"> Hide</i>
+          </div>
+          <div class="p_order">
+            <p>Ordered: </p>
+            <!-- The order will be insert here -->
+            <div class="order_detail">
+            </div>
+          </div>
+          <!-- payment details -->
+          <div class="bill">
+            <p class="subtotal">Subtotal <b><b>$ </b><span></span></b></p>
+            <p class="discount">Discount <b><i>-10% </i><b>$ </b><span></span></b></p>
+            <p class="last_total">Total <b><b>$ </b><span></span></b></p>
+          </div>
+          
+          <div><button class="confirm">PAY NOW</button></di>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script type="module" src="./scripts/main.js"></script>
+<script src="./scripts/salad.js"></script>
+<script src="./scripts/drink.js"></script>
+</html>
