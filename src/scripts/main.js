@@ -161,15 +161,35 @@ function content() {
           2
         );
       }
+      
       // ////SELECT EXTRAS FOR THE PIZZA
+      selected[0].style.backgroundColor = "rgb(248, 110, 110)";
       selected.forEach((element) => {
         element.addEventListener("click", () => {
+          let p=parseFloat(total.innerHTML);
+          console.log(p);
+          
+          if(element.innerText=='Small'){
+            // total.innerHTML=(parseFloat(total.innerHTML)-parseFloat(0.50)).toFixed(2);
+            selected[1].style.backgroundColor = "rgb(98, 91, 91)";
+            selected[2].style.backgroundColor = "rgb(98, 91, 91)";
+          }
+          if(element.innerText=='Medium'){
+            // total.innerHTML=(parseFloat(total.innerHTML)-parseFloat(0.50)).toFixed(2);
+            selected[0].style.backgroundColor = "rgb(98, 91, 91)";
+            selected[2].style.backgroundColor = "rgb(98, 91, 91)";
+          }
+          if(element.innerText=='Large'){
+            // total.innerHTML=(parseFloat(total.innerHTML)-parseFloat(0.50)).toFixed(2);
+            selected[0].style.backgroundColor = "rgb(98, 91, 91)";
+            selected[1].style.backgroundColor = "rgb(98, 91, 91)";
+          }
           if (element.style.backgroundColor == "rgb(248, 110, 110)") {
             element.style.backgroundColor = "rgb(98, 91, 91)";
-            total.innerHTML=parseFloat(total.innerHTML)-parseFloat(0.50);
+            total.innerHTML=(parseFloat(total.innerHTML)-parseFloat(0.50)).toFixed(2);
           } else {
             element.style.backgroundColor = "rgb(248, 110, 110)";
-            total.innerHTML=parseFloat(total.innerHTML)+parseFloat(0.50);
+            total.innerHTML=(parseFloat(total.innerHTML)+parseFloat(0.50)).toFixed(2);
           }
         });
       });
