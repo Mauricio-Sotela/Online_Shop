@@ -304,7 +304,7 @@ nav .cart .items-no {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 20rem;
+  min-width: 10vw;
   min-height: 10vh;
   width: 25%;
   margin: 1rem;
