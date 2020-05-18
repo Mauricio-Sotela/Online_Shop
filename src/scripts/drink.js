@@ -147,6 +147,9 @@ const drinks = [
 
 let drink=document.querySelector('.drinks');
 drink.addEventListener('click',()=>{
+  drink.style.cssText='border-bottom:2px solid rgb(248, 110, 110);';
+  salad.style.cssText='border-bottom:none;';
+  pizza.style.cssText='none';
     pizza_options.innerHTML='';
     for (let i = 0; i < drinks.length; i++) {
         pizza_options.innerHTML += `<div class="item ">

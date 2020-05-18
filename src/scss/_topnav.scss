@@ -41,6 +41,7 @@ nav {
       height: 7vh;
       font-size: 3.5vw;
       color: #f86e6e;
+      cursor: pointer;
       // color: #FD933A;
 
       @include respond(phone) {

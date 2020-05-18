@@ -144,10 +144,13 @@ const salads = [
     },
   ];
   
-
+  let pizza = document.querySelector(".pizza");
 let salad=document.querySelector('.salads');
 let pizza_options = document.querySelector(".menu_options");
 salad.addEventListener('click',()=>{
+    salad.style.cssText='border-bottom:2px solid rgb(248, 110, 110);' ;
+    drink.style.cssText='border-bottom:none;';
+    pizza.style.cssText='none';
     pizza_options.innerHTML='';
     for (let i = 0; i < salads.length; i++) {
         pizza_options.innerHTML += `<div class="item ">
