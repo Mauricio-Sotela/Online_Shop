@@ -2,6 +2,7 @@ import { data1 } from "./products.js";
 let data = JSON.parse(data1);
 
 // //////////////VARIABLES///////////
+let logo = document.querySelector(".logo p");
 let pizza_options = document.querySelector(".menu_options");
 let orders = document.querySelector(".items-no");
 let payment = document.querySelector(".payment");
@@ -29,6 +30,9 @@ window.addEventListener("load", content);
 pizza.addEventListener("click", content);
 // ////////////MAIN FUNCTION/////////
 function content() {
+  pizza.style.cssText='border-bottom:2px solid rgb(248, 110, 110);'
+  salad.style.cssText='none';
+  drink.style.cssText='none';
   pizza_options.innerHTML='';
   for (let i = 0; i < data.length; i++) {
     pizza_options.innerHTML += `<div class="item ">
@@ -275,3 +279,8 @@ showAll.addEventListener("click", () => {
   }
   location.reload();
 });
+
+/////LOGO CLICK////
+logo.addEventListener('click',()=>{
+  location.reload();
+})
