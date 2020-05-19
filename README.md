@@ -6,7 +6,7 @@ Credits go to:
 - Simona:     https://github.com/SimonaHriscu;
 - Wajih:      https://github.com/Wajih-alzouhairy.
 
-<img src="https://media.giphy.com/media/65HR2UL6nn6XMSUoRA/source.gif">
+
 
 ## Preview Web version:
 
