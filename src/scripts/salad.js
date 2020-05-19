@@ -144,7 +144,7 @@ const salads = [
     },
   ];
   
-  let pizza = document.querySelector(".pizza");
+let pizza = document.querySelector(".pizza");
 let salad=document.querySelector('.salads');
 let pizza_options = document.querySelector(".menu_options");
 salad.addEventListener('click',()=>{

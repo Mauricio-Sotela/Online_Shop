@@ -25,15 +25,15 @@ let vegan = document.querySelector(".filter1");
 let gluten = document.querySelector(".filter2");
 let showAll = document.querySelector(".filter3");
 
-///////////PAGE LOAD FUNCTIO*****
+///////////PAGE LOAD FUNCTION*****
 window.addEventListener("load", content);
 pizza.addEventListener("click", content);
 // ////////////MAIN FUNCTION/////////
 function content() {
-  pizza.style.cssText='border-bottom:2px solid rgb(248, 110, 110);'
-  salad.style.cssText='none';
-  drink.style.cssText='none';
-  pizza_options.innerHTML='';
+  pizza.style.cssText = "border-bottom:2px solid rgb(248, 110, 110);";
+  salad.style.cssText = "none";
+  drink.style.cssText = "none";
+  pizza_options.innerHTML = "";
   for (let i = 0; i < data.length; i++) {
     pizza_options.innerHTML += `<div class="item ">
      <img class="pizza_img" src="${data[i]["image"]}" alt="${data[i]["name"]}" width="90%">
@@ -168,45 +168,47 @@ function content() {
       }
       // /////SIZE FOR THE PIZZA
       sizes[0].style.backgroundColor = "rgb(248, 110, 110)";
-      const original=parseFloat(total.innerHTML);
-      let p=parseFloat(total.innerHTML);
+      const original = parseFloat(total.innerHTML);
+      let p = parseFloat(total.innerHTML);
       sizes.forEach((element) => {
         element.addEventListener("click", () => {
-          if(element.innerText=='Small'){
-            total.innerHTML=original
+          if (element.innerText == "Small") {
+            total.innerHTML = original;
             element.style.backgroundColor = "rgb(248, 110, 110)";
             sizes[1].style.backgroundColor = "rgb(98, 91, 91)";
             sizes[2].style.backgroundColor = "rgb(98, 91, 91)";
           }
-          if(element.innerText=='Medium'){
-            total.innerHTML=(p+parseFloat(1)).toFixed(2);
+          if (element.innerText == "Medium") {
+            total.innerHTML = (p + parseFloat(1)).toFixed(2);
             element.style.backgroundColor = "rgb(248, 110, 110)";
             sizes[0].style.backgroundColor = "rgb(98, 91, 91)";
             sizes[2].style.backgroundColor = "rgb(98, 91, 91)";
           }
-          if(element.innerText=='Large'){
-            total.innerHTML=(p+parseFloat(1.50)).toFixed(2);
+          if (element.innerText == "Large") {
+            total.innerHTML = (p + parseFloat(1.5)).toFixed(2);
             element.style.backgroundColor = "rgb(248, 110, 110)";
             sizes[0].style.backgroundColor = "rgb(98, 91, 91)";
             sizes[1].style.backgroundColor = "rgb(98, 91, 91)";
           }
-        })
-      })
-
+        });
+      });
 
       // ////SELECT EXTRAS FOR THE PIZZA
-      
+
       selected.forEach((element) => {
         element.addEventListener("click", () => {
-         
           if (element.style.backgroundColor == "rgb(248, 110, 110)") {
             element.style.backgroundColor = "rgb(98, 91, 91)";
-            total.innerHTML=(parseFloat(total.innerHTML)-parseFloat(0.50)).toFixed(2);
-            p=parseFloat(total.innerHTML)-0.50;
+            total.innerHTML = (
+              parseFloat(total.innerHTML) - parseFloat(0.5)
+            ).toFixed(2);
+            p = parseFloat(total.innerHTML) - 0.5;
           } else {
             element.style.backgroundColor = "rgb(248, 110, 110)";
-            total.innerHTML=(parseFloat(total.innerHTML)+parseFloat(0.50)).toFixed(2);
-            p=parseFloat(total.innerHTML)-0.50;
+            total.innerHTML = (
+              parseFloat(total.innerHTML) + parseFloat(0.5)
+            ).toFixed(2);
+            p = parseFloat(total.innerHTML) - 0.5;
           }
         });
       });
@@ -230,8 +232,6 @@ bill_status.addEventListener("click", () => {
 hide_pay.addEventListener("click", () => {
   payment.style.display = "none";
 });
-
-
 
 // ///////////////////////VEGAN FILTER//////////
 vegan.addEventListener("click", () => {
@@ -281,6 +281,6 @@ showAll.addEventListener("click", () => {
 });
 
 /////LOGO CLICK////
-logo.addEventListener('click',()=>{
+logo.addEventListener("click", () => {
   location.reload();
-})
+});
