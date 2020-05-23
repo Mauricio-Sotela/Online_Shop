@@ -270,7 +270,7 @@ showAll.addEventListener("click", () => {
   pizza_options.innerHTML = "";
   for (let i = 0; i < data.length; i++) {
     pizza_options.innerHTML += `<div class="item ">
-     <img class="pizza_img" src="${data[i]["image"]}" alt="${data[i]["name"]}" width="90%">
+     <img class="pizza_img" src="${data[i]["image"]}" alt="${data[i]["name"]}" width="91%">
      <i class="fas fa-plus-circle icon"></i>
      <span class="price">$${data[i]["price"]}</span>
      <span class="name">${data[i]["name"]}</span>
