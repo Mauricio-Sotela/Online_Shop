@@ -15,7 +15,7 @@
     "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
     "publish": "gh-pages -d dist"
   },
-  "author": "",
+  "author": "Mauricio",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^2.1.1",
