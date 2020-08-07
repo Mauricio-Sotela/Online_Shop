@@ -1,11 +1,5 @@
 # Online Self - Order Website / App
 
-Credits go to:
-
-- Mauricio:   https://github.com/Mauricio-Sotela;
-- Simona:     https://github.com/SimonaHriscu;
-- Wajih:      https://github.com/Wajih-alzouhairy.
-
 
 
 ## Preview Web version:
@@ -51,4 +45,12 @@ Credits go to:
 <p align ="center">
   <img src="https://i.imgur.com/SGyAaRt.png?1">
 </p>
+
+Credits go to:
+
+- Mauricio:   https://github.com/Mauricio-Sotela;
+- Simona:     https://github.com/SimonaHriscu;
+- Wajih:      https://github.com/Wajih-alzouhairy.
+
+
 <!-- ![Imgur](https://i.imgur.com/SGyAaRt.png?1) -->
