@@ -52,5 +52,5 @@ Credits go to:
 - Simona:     https://github.com/SimonaHriscu;
 - Wajih:      https://github.com/Wajih-alzouhairy.
 
-
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=Mauricio-Sotelaa&repo=github-readme-stats&theme=gruvbox)](https://github.com/Mauricio-Sotela/github-readme-stats)
 <!-- ![Imgur](https://i.imgur.com/SGyAaRt.png?1) -->
